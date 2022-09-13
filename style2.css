@@ -277,7 +277,7 @@ input {
   
 }
 .banner{
-  background-color:  	#1E90FF;
+  background:linear-gradient(45deg , #0000FF,  #00BFFF);
   background-size: cover;
   }
   
@@ -292,7 +292,7 @@ input {
   
 }
 .divmarge{
-  background-color: #FFA500;
+  background:linear-gradient(-45deg , #FFA500, #B8860B);
   height: 550px;
   display: flex;
   color: white;
@@ -302,7 +302,7 @@ input {
   text-decoration: none;
 }
 .divlisa{
-  background-color: #E73C7E;
+  background:linear-gradient(-45deg , 	#8B008B, #E73C7E);
   height: 550px;
   display: flex;
   color: white;
@@ -312,7 +312,7 @@ input {
   text-decoration: none;
 }
 .divbart{
-  background-color:  	#00FF00;
+  background:  linear-gradient(-45deg  ,  	#ADFF2F ,#00FF00);
   height: 550px;
   display: flex;
   color: white;
@@ -322,7 +322,7 @@ input {
   text-decoration: none;
 }
 .divmaggy{
-  background-color:#FF1493;
+  background:linear-gradient(-45deg , 	#C71585, #FF1493);
   height: 550px;
   display: flex;
   color: white;
