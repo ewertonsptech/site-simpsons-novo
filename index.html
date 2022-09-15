@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="inicio.css">
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+
 </head>
 <body> 
   <div class="page-wrapper">
@@ -29,18 +31,60 @@
     
   </nav>
   </div>
+  </div>
       
          <div class="banner">
             <div class="container">
-              <p class="line typing-animation">A Persistência é o Caminho do Êxito.</p>
+              <p class="line typyng-animation">A Persistência é o Caminho do Êxito.</p>
             </div>
-        </div>
-    <div class="card">
-      
-    </div>
+         </div>
+        
+         
+
+<div class="degrade">
+  <img src="ClownFace_avat0.webp" id="krusty">
+  <img src="8eae76600d6090da366afb1bd3b68fa6.png" alt="" id="simpsons">
+<div class="desenho">
+  <section class="vr">
+     <section class="antena right"></section>
+     <section class="antena left"></section>
+     <section class="tape"></section>
+ </section>   
+ <video class="video">
+ <source  src="https://mybucketia.s3-us-west-2.amazonaws.com/losismpons.mp4" type="video/mp4"/>
+ </video>
+ <section>
+     <section class="decoration">
+         <div onclick="play()" class="ligar">
+         <span class="left ajust">||</span>
+         </div>
+     </section>
+     <section class="decoration">
+         <div onclick="stop()"  class="ligar">
+           <span class="right">||</span>
+         </div>
+ </section>
+ <section class="audio"></section>
+</div>
+ 
+ 
   <div class="footer">
       
     <div class="container">
     </div>  
+  </div>
 </body>
 </html>
+<script>
+const video = document.getElementsByTagName("video")[0];
+video.currentTime = 2; 
+
+function play() {
+  video.play();
+}
+
+function stop() {
+  video.pause();
+}
+
+</script>
