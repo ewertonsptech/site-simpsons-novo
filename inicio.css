@@ -234,7 +234,7 @@ h2 {
 .degrade{
   height: 650px;
   display: flex;
- background-color:#9932CC;
+ background:linear-gradient(-45deg , #A020F0 , 	#4B0082);
   align-items: center;
   justify-content: center;
   align-items: center;
