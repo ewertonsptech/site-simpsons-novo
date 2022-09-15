@@ -234,7 +234,7 @@ h2 {
 .degrade{
   height: 650px;
   display: flex;
- 
+ background-color:#9932CC;
   align-items: center;
   justify-content: center;
   align-items: center;
@@ -275,7 +275,7 @@ h2 {
   width: .7vh;
   max-width: .7vh;
   min-width: .7vh;
-  background-color: lightgrey;
+  background: #000;
   top: -17vh;
   left: 14vh;
   z-index: -1;
