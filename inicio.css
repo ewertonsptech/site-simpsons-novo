@@ -222,7 +222,7 @@ h2 {
     }
     
 .banner .container{
-    height: 680px;
+    height: 580px;
     display: flex;
     color: white;
     align-items: center;
@@ -302,7 +302,7 @@ h2 {
   position:relative;
 }
 video {
-  width: 40vh;
+  width: 35vh;
   align-item: start;
   margin: 0 auto;
   border-radius: 15px;
@@ -355,7 +355,7 @@ h3{
 }
 #krusty{
   float: right;
-width: 370px;
+width: 260px;
 }
 #krusty{
   position: absolute;
@@ -363,6 +363,7 @@ width: 370px;
 }
 #simpsons{
   float: left;
+  width: 370px;
 }
 #simpsons{
   position: absolute;
