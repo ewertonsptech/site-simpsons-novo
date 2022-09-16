@@ -322,7 +322,7 @@
   height: auto;
   width: auto;
   border-radius: 20px;
-  box-shadow: 30px 20px 2px  	#FFA500;
+  box-shadow: 40px 20px 12px  	#FFA500;
 }
 .title{
   color: #FF8C00;
@@ -372,8 +372,9 @@
 border-radius: 50%;
 }
 .circle-imagem{
-  width: 190 px;
-  height: 95px;
+ 
+  width: 10 px;
+  height: 20px;
   background-image: url ('Homer_Simpson_2006.png');
   display: block;
 border-radius: 50%;
