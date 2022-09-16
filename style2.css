@@ -332,7 +332,22 @@ input {
   text-decoration: none;
 }
 
-
+#homertexto{
+  position: absolute; top: 80px; left: 20px;
+   
+}
+#margetexto{
+  position: absolute; top: 670px; left: 20px;  
+}
+#lisatexto{
+  position: absolute; top: 1180px; left: 20px;  
+}
+#barttexto{
+  position: absolute; top: 1760px; left: 20px;  
+}
+#maggietexto{
+  position: absolute; top: 2280px; left: 20px;  
+}
 #imgbart {
   float: right;
 }
