@@ -365,8 +365,8 @@
   box-shadow: 5px 5px 0px 9px #000;
 }
 .circle-image {
-  width: 50 px;
-  height: 70px;
+  width: 10 px;
+  height: 68px;
   background-image: url ('Homer_Simpson_2006.png');
   display: block;
 border-radius: 50%;
@@ -378,4 +378,16 @@ border-radius: 50%;
   background-image: url ('Homer_Simpson_2006.png');
   display: block;
 border-radius: 50%;
+}
+select {
+  width: 300px;
+  height: 30px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background:  #FFF;
+  border: 1px solid #333;
+  font-size: 15px;
+  padding-right: 20px;
+  border-radius: 15px;
 }
