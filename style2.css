@@ -351,6 +351,9 @@ input {
 #imgbart {
   float: right;
 }
+#game{
+  margin: 12px;
+}
 
 #imgbart {
   position: absolute;

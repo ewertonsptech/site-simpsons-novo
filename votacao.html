@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eleições Simpsorama</title>
+    <title>Game Simpsorama</title>
     <link rel="stylesheet" href="eleicao.css">
 </head>
 <body>
-    
+    <div class="page-wrapper">
+        <div class="nav-wrapper">
+          <div class="grad-bar"></div>
+          <nav class="navbar">
+          <img src="hV08fE.jpg" alt="" class="img">
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span  class="bar"></span>
+          <span  class="bar"></span>
+          </div>
+          <ul class="nav no-search">
+          <li class="nav-item"><a href="index.html">Inicio</a></li>
+          <li class="nav-item"><a href="cadastro.html">Cadastro</a></li>
+          <li class="nav-item"><a href="login.html">Login</a></li>
+          <li class="nav-item"><a href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a href="curiosidade.html">Curiosidades</a></li>
+          <li class="nav-item"><a href="votacao.html" id="game">Game</a></li>
+          <i class="fas fa-search" id="search-icon"></i>
+        </ul>
+          
+        </nav>
+        </div>
+        </div>
+    <div class="desenho">
  <!-- ICONS CLOUDS-->
  <div class="container-cloud">
 
@@ -81,9 +104,11 @@
         <button id="btn" type="button" onclick="verificar()">Verificar</button>
       </div>
     </div>
+</div>
 </body>
 </html>
-<script>var answers = ["homer", "marge", "maggie", "bart", "lisa", "moe"];
+<script>
+var answers = ["homer", "marge", "maggie", "bart", "lisa", "moe"];
 
     
     function verificar(){
