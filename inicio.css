@@ -387,6 +387,15 @@ width: 350px;
   left: 40%;
   margin: -25px 0 0 -25px;
 }
+#tagnome{
+  justify-content: center;
+  text-align: center;
+  margin: 15;
+  top: 205%;
+  width: 550px;
+  position: absolute;
+ 
+}
 .conteudo{
   background:linear-gradient(-45deg , #87cefa ,#00BFFF);
   height: 1500px;
@@ -394,19 +403,19 @@ width: 350px;
 
 /* clouds */
 .container-cloud{
-  height:0;
+  height:12px;
   position: relative;
-  width:100%;
+  width:10%;
   padding-top: 10%;
 }
 .svg-cloud01 {
   width:50%;
-  height: 230%;
+  height: 330%;
   fill: #ecf0f1;
   position: absolute;
   top:0;
-  left:-100px;
-  z-index:100;
+  left:-10px;
+  z-index:10;
   overflow-x:hidden;
 -webkit-animation:drift 25s linear infinite;
 -moz-animation: drift 25s linear infinite;
