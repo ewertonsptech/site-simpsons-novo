@@ -67,7 +67,7 @@ body{
     font-size: 14px;
     position: fixed;
     color: #fff;
-    background: #0077b5;
+    background:linear-gradient(#515bd4, #8134af, #dd2a7b, #feda77,  #f58529);
     padding: 10px;
     border-radius: 50%;
     top: 5px;
