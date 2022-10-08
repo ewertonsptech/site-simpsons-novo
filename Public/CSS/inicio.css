@@ -59,7 +59,7 @@ h2 {
 }
 
 .navbar img {
-  height: 56px;
+  height: 42px;
   width: auto;
   justify-self: start;
   margin-left: 20px;
@@ -219,7 +219,7 @@ h2 {
   
 }
   .banner{
-    background-image: url(teste3.png);
+    background-image: url(../Imagens/teste3.png);
     background-size: cover;
     }
     

@@ -61,7 +61,7 @@
   }
   
   .navbar img {
-    height: 56px;
+    height: 42px;
     width: auto;
     justify-self: start;
     margin-left: 20px;
@@ -281,7 +281,7 @@
     
   }
   .banner{
-    background-image: url(simpsons.png);
+    background-color:  	#FFFF00;
     background-size: cover;
     }
     
@@ -294,6 +294,14 @@
     align-items: center;
     
 }
+#imgfamilia {
+    float: right;
+  }
+  
+  #imgfamilia {
+    position: absolute;
+    right: 0px;
+  }
 
 .footer {
     background: linear-gradient(-45deg, #FF8C00 ,  #FFFF00, 	#FFD700, #FFA500);
@@ -322,7 +330,7 @@
   height: auto;
   width: auto;
   border-radius: 20px;
-  box-shadow: 40px 20px 12px  	#FFA500;
+  box-shadow: 30px 20px 2px  	#FFA500;
 }
 .title{
   color: #FF8C00;
@@ -362,35 +370,8 @@
   background: linear-gradient(-45deg, #FF8C00 ,  #FFFF00, 	#FFD700, #FFA500);
   border-radius: 30px;
   font-weight: 800;
- 
-}
-.circle-image {
-  width: 10 px;
-  height: 68px;
-  background-image: url ('Homer_Simpson_2006.png');
-  display: block;
-border-radius: 50%;
+  box-shadow: 5px 5px 0px 9px #000;
 }
 #game{
   margin: 12px;
-}
-.circle-imagem{
- 
-  width: 10 px;
-  height: 20px;
-  background-image: url ('Homer_Simpson_2006.png');
-  display: block;
-border-radius: 50%;
-}
-select {
-  width: 300px;
-  height: 30px;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background:  #FFF;
-  border: 1px solid #333;
-  font-size: 15px;
-  padding-right: 20px;
-  border-radius: 15px;
 }
