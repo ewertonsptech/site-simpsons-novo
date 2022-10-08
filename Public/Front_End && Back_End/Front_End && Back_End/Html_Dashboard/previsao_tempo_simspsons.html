@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo Simpsorama</title>
+    <link rel="stylesheet" href="..//Css_Dashboard/previsao_simpsorama.css">
+    <script src="..//JavaScript/Script.js"></script>
+    <script src="https://kit.fontawesome.com/3f0399636b.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+   
+        <div class="navbar">
+          
+                <aside>
+                    <p>Menu</p> <div class="nome">
+                        <h1>Olá Ewerton Lima</h1>
+                    </div>
+                    <a href="dashboard.html">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                   Personagens Favoritas
+                </a>
+                <a href="previsao_tempo_simspsons.html">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                   Previsão do Tempo Simpsorama
+                </a>
+                
+                <a href="fale_conosco.html">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                 Fale com os Simpsons
+                </a>
+                
+                <a href="..//Html_site/index.html">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                   Sair
+                </a>
+                <div class="social">
+                    <a href="https://www.instagram.com/ewerton.lima.dev/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    
+                </a>
+                
+                </div>
+            
+            
+        
+        </div>
+        
+   
+   
+    </aside>
+    <div class="clima">
+    <div class="container">
+        <div class="form">
+            <h3>Confira o Clima de Uma Cidade</h3>
+            <div class="form-input-container">
+                <input type="text" placeholder="Digite o Nome da Cidade" id="city">
+              <button id="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </button>
+        </div>
+        <div id="weather-data">
+            <h2>
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="city">São Paulo</span>
+                <img src="https://countryflagsapi.com/png/br" id="coutry" alt="Bandeira do País">
+            </h2>
+            <p id="temperature"><span>29</span>&deg;C</p>
+            <div class="description-container">
+                <p id="description">Nublado</p>
+                <img src="http://openweathermap.org/img/wn/03d@2x.png" alt="Condições do Tempo" id="weather-icon" width="50px" height="50px">
+            </div>
+            <div class="details-container">
+                <p id="umidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>48%</span>
+                </p>
+                <p id="wind"></p>
+                <i class="fa-solid fa-wind"></i>
+                <span>3km h</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
