@@ -153,8 +153,8 @@ input:checked * .slider::before{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    top: 500px;
-    margin: 12px;
+    top: 540px;
+    margin: 2px;
    
   }
   .form-area{
@@ -166,14 +166,14 @@ input:checked * .slider::before{
     background-color:#fff;
     height:490px;
     width: auto;
-   
+   height: 590px;
     border-radius: 20px;
     box-shadow: 4px 2px 12px  	#FFA500;
   }
   .title{
     color: #FF8C00;
     font-weight: 800;
-    font-size: 1.5em;
+    font-size: 1.9em;
     margin-top: 50px;
    
   }
@@ -216,4 +216,15 @@ input:checked * .slider::before{
     width: 400px;
     top: 250px;
   }
-  
+  .btn{
+   
+    top: 200px;
+    padding: 15px;
+    margin: -10px;
+    width: 310px;
+    font-size: 15px;
+    background: linear-gradient(-45deg, #FF8C00 ,  #FFFF00, 	#FFD700, #FFA500);
+    border-radius: 30px;
+    font-weight: 800;
+   
+  }
