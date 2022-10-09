@@ -155,7 +155,7 @@ input:checked * .slider::before{
         margin: -143px auto;
         background-color: #fbd800;
         top: 310px;       
-        left: 480px;
+        left: 450px;
     }
     
     #homer .head *
@@ -734,6 +734,7 @@ input:checked * .slider::before{
 }
 .container{
     background-color: #fbd800;
+    background-size: cover;
 }
 #bart
 {
@@ -1341,7 +1342,7 @@ input:checked * .slider::before{
     height: 205px;
     margin: 5px;
     top: -75px;       
-    left: 480px;
+    left: 390px;
 }
 
 #marge .head *
@@ -2340,7 +2341,7 @@ input:checked * .slider::before{
     height: 106px;
     margin: -200px;
     top: 2px;       
-    right: -890px;
+    right: -820px;
 }
 
 #maggie .head *
@@ -2994,7 +2995,7 @@ input:checked * .slider::before{
     height: 120px;
     margin: -32px;
     top: 80px;       
-    right: -890px;
+    right: -850px;
 }
 
 #lisa .head *
@@ -3706,4 +3707,74 @@ input:checked * .slider::before{
 {
     top: 108px;
     left: 69px;
+}
+canvas{
+   position: relative;
+    margin: -590px;
+    top: 285px;       
+    left: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(.8);
+}
+.votos_bart{
+    top: 130px;
+    
+}
+.votos_bart h3{
+    color:#FFA500;
+}
+
+.votos_bart_simpson{
+    top: -100px;
+    left: 122px;
+}
+.votos_bart_simpson p{
+    color: #FFA500;
+    top: 57px;
+}
+.votos_homer_simpson{
+    top: 14px;
+    left: 320px;
+}
+.votos_homer_simpson h3{
+    color: #FFA500;
+}
+.votos_homer_simpson p{
+    color: #FFA500;
+    top: 68px;
+}
+.votos_marge_simpson{
+    top: 14px;
+    left: 535px;
+}
+.votos_marge_simpson h3{
+    color: #FFA500;
+}
+.votos_marge_simpson p{
+    color: #FFA500;
+    top: 68px;
+}
+.votos_maggie_simpson{
+    top: 14px;
+    left: 735px;
+}
+.votos_maggie_simpson h3{
+    color: #FFA500;
+}
+.votos_maggie_simpson p{
+    color: #FFA500;
+    top: 68px;
+}
+.votos_lisa_simpson{
+    top: 14px;
+    left: 950px;
+}
+.votos_lisa_simpson h3{
+    color: #FFA500;
+}
+.votos_lisa_simpson p{
+    color: #FFA500;
+    top: 68px;
 }
