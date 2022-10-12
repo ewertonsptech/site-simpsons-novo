@@ -460,3 +460,95 @@ animation:drift 10s linear infinite backwards;
   0% {opacity: 1;transform: translateX(-10px);}
   100% {opacity: 1;transform: translateX(100%);}
 }
+.redes_sociais{
+  height: 0;
+ 
+}
+.redes_sociais i::before{
+  width: 12px;
+  height: 12px;
+  font-size: 14px;
+  position:absolute;
+  color: #fff;
+  background: #34af23 ;
+  padding: 10px;
+  border-radius: 50%;
+  top: 765px;
+  right: 155px;
+}
+.github{
+  height: 0;
+}
+.github i::before{
+  width: 12px;
+  height: 12px;
+  font-size: 14px;
+  position:absolute;
+  color: #fff;
+  background: #171515  ;
+  padding: 10px;
+  border-radius: 50%;
+  top: 765px;
+  right: 215px;
+}
+.facebook{
+  height: 0;
+}
+.facebook i::before{
+  width: 12px;
+  height: 12px;
+  font-size: 14px;
+  position:absolute;
+  color: #fff;
+  background:#3b5998  ;
+  padding: 10px;
+  border-radius: 50%;
+  top: 765px;
+  right: 275px;
+}
+.instagram{
+  height: 0;
+}
+.instagram i::before{
+  width: 12px;
+  height: 12px;
+  font-size: 14px;
+  position:absolute;
+  color: #fff;
+  background:linear-gradient(#515bd4, #8134af, #dd2a7b, #feda77,  #f58529);
+  padding: 10px;
+  border-radius: 50%;
+  top: 765px;
+  right: 335px;
+}
+.linkedin{
+  height: 0;
+}
+.linkedin i::before{
+  width: 12px;
+  height: 12px;
+  font-size: 14px;
+  position:absolute;
+  color: #fff;
+  background: #0e76a8;
+  padding: 10px;
+  border-radius: 50%;
+  top: 765px;
+  right: 385px;
+}
+.redes_sociais h3{
+ 
+  
+  position:absolute;
+  color: #FFF;
+  padding: 10px;
+  border-radius: 50%;
+  top: 725px;
+  right: 235px;
+}
+.texto_footer{
+  position: absolute;
+  color: #fff;
+  top: 770px;
+  right: 40%;
+}
