@@ -294,6 +294,9 @@
     align-items: center;
     
 }
+.hide {
+  display: none !important;
+}
 
 .footer {
   background: #FFD200;

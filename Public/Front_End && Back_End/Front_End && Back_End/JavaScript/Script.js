@@ -40,11 +40,11 @@ const getWeatherData = async (city) => {
 };
 
 // Tratamento de erro
-const showErrorMessage = () => {
+const mensagem_de_erro = () => {
   errorMessageContainer.classList.remove("hide");
 };
 
-const hideInformation = () => {
+const informacoes_temperatura = () => {
   errorMessageContainer.classList.add("hide");
   weatherContainer.classList.add("hide");
 
@@ -52,12 +52,12 @@ const hideInformation = () => {
 };
 
 const showWeatherData = async (city) => {
-  hideInformation();
+  informacoes_temperatura();
 
   const data = await getWeatherData(city);
 
   if (data.cod === "404") {
-    showErrorMessage();
+    mensagem_de_erro();
     return;
   }
 

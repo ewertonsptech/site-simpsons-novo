@@ -75,10 +75,13 @@
                     <button class="btn" onclick="cadastrar()"><h3>Cadastrar</h3></button>
                   
                   </div>
-
+                 
                 </div>
              
         </div>
+            </div>
+            <div id="loader" class="hide">
+              <i class="fa-solid fa-spinner"></i>
             </div>
               
   <div class="footer">
@@ -86,6 +89,7 @@
         <h3 class="texto_rede_social">Redes Sociais</h3>
         <a href="">
         <i class="fa-brands fa-whatsapp" id="whatsapp"></i>
+        <i class="fa-brands fa-fahrenheit"></i>
       </a>
         
         <div class="github">
@@ -131,5 +135,11 @@ $('.menu-toggle').click(function(){
 function cadastrar(){
 
   let validacao_nome =  document.getElementsByClassName("sub_title")
+
+
+const toggleLoader = () => {
+  loader.classList.toggle("hide");
+};
+
 }
 </script>
