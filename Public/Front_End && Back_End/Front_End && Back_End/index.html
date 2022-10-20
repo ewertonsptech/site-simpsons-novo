@@ -37,8 +37,12 @@
       
          <div class="banner">
             <div class="container">
-              <p class="line typyng-animation">A Persistência é o Caminho do Êxito.</p>
+               <h1 class="texto_simpsons">
+                <div id="text" class="text">
+             
             </div>
+          </h1>
+          </div>
          </div>
         
          
@@ -114,5 +118,24 @@ function play() {
 function stop() {
   video.pause();
 }
-
+var el = document.querySelector("#text");
+var text = "A Persistência é o Caminho do Êxito."
+var interval = 200;
+function showtext(el, text, interval) {
+  var char = text.split("").reverse();
+  
+  var typer = setInterval(function() {
+  
+    if (!char.length) {
+        return clearInterval(typer)
+    }
+    
+    var next = char.pop();
+    
+    el.innerHTML += next;
+    
+  }, interval);
+  
+}
+showtext(el, text, interval);
 </script>
