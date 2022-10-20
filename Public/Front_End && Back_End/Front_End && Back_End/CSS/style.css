@@ -490,3 +490,36 @@ select {
   top: 770px;
   right: 40%;
 }
+.erro_nome{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+color: red;
+margin: 15px;
+right: 600px;
+top: 290px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sub_title{
+  color: red;
+}
+.erro_email{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+color: red;
+margin: 15px;
+right: 535px;
+top: 390px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.erro_senha{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+color: red;
+margin: 15px;
+right: 520px;
+top: 480px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
