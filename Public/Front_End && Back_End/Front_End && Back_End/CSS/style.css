@@ -494,20 +494,20 @@ select {
   display: flex;
   position: absolute;
   justify-content: center;
-color: red;
+ color:  	#A020F0;
 margin: 15px;
 right: 600px;
 top: 290px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .sub_title{
-  color: red;
+   color:  	#A020F0;
 }
 .erro_email{
   display: flex;
   position: absolute;
   justify-content: center;
-color: red;
+ color:  	#A020F0;
 margin: 15px;
 right: 535px;
 top: 390px;
@@ -517,9 +517,9 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: flex;
   position: absolute;
   justify-content: center;
-color: red;
+color:#A020F0;
 margin: 15px;
-right: 520px;
+right: 695px;
 top: 480px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
