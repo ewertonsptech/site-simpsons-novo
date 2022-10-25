@@ -20,7 +20,7 @@ const loader = document.querySelector("#loader");
 
 const suggestionContainer = document.querySelector("#suggestions");
 const suggestionButtons = document.querySelectorAll("#suggestions button");
-
+const temperaturaf = document.querySelectorAll("#fahrenheit")
 // Loader
 const toggleLoader = () => {
   loader.classList.toggle("hide");
@@ -38,6 +38,8 @@ const getWeatherData = async (city) => {
 
   return data;
 };
+
+
 
 // Tratamento de erro
 const mensagem_de_erro = () => {

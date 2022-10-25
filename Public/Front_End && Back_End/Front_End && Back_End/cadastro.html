@@ -58,8 +58,9 @@
                   </div>
 
                   <div class="form_group">
-                    <label for="password" class="sub_title" id="senha_usuario">Senha</label>
-                    <input type="password" class="form_style" id="password" placeholder="Senha de no Mínimo 8 Caracteres">
+                    <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho" class="olho">
+                    <label for="password" class="sub_title" id="label_senha">Senha</label>
+                    <input type="password" class="form_style" id="senha_usuario" placeholder="Senha de no Mínimo 8 Caracteres">
                    <span id="erro_senha_usuario" class="erro_senha"></span>
                   </div>
                   <div class="form_group">
@@ -125,6 +126,17 @@
 </body>
 </html>
 <script>
+  
+    document.getElementById('olho').addEventListener('mousedown', function() {
+   document.getElementById('senha_usuario').type = 'text';
+});
+
+document.getElementById('olho').addEventListener('mouseup', function() {
+  document.getElementById('senha_usuario').type = 'password';
+});
+
+
+  
 
 function cadastrar(){
 
@@ -132,12 +144,14 @@ function cadastrar(){
   
 
   if(validacao_nome.length < 3){
-    erro_nome.innerHTML = "Nome Muito Curto Tente Novamente"
-    document.getElementById("erro_nome_usuario").style.color = "#A020F0";
+    erro_nome.innerHTML = "Nome muito curto tente novamente"
+    document.getElementById("erro_nome_usuario").style.color = "#FF0000";
+    erro_nome_usuario.innerHTML = "Nome incorreto"
   }
-  else if(validacao_nome.length >=3){
+  else{
     document.getElementById("erro_nome_usuario").style.color = "#00FF7F";
     erro_nome.innerHTML = ""
+    erro_nome_usuario.innerHTML = "Nome"
   }
   
 
@@ -150,29 +164,33 @@ function email(){
   var email = document.getElementById('email');
         var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if (!filter.test(email.value)) {
-          erro_email_usuario.innerHTML="Por Favor Verifique o Email e Tente Novamente"
-          document.getElementById("email_usuario").style.color = "#A020F0"
+          erro_email_usuario.innerHTML="Por favor verifique o email e tente novamente"
+          document.getElementById("email_usuario").style.color = "#FF0000"
+          email_usuario.innerHTML = "Email inválido" 
             return false;
         }
         else{
           document.getElementById("email_usuario").style.color = "#00FF7F"
           erro_email_usuario.innerHTML= ""
+          email_usuario.innerHTML = "Email"
         }
 
 }
   
 function senha(){
   
-  let senha_usuario = password.value
+  let senha_usuario = senha_usuario.value
   
 
    if(senha_usuario.length < 8){
-    erro_senha_usuario.innerHTML = "Senha/Email Incorreto"
-    document.getElementById("senha_usuario").style.color = "#A020F0"
+    erro_senha_usuario.innerHTML = "Senha/email incorreto"
+    document.getElementById("label_senha").style.color = "#FF0000"
+    label_senha.innerHTML = "Senha menor que 8 caracteres"
    }
 else{
-  document.getElementById("senha_usuario").style.color = "#00FF7F"
+  document.getElementById("label_senha").style.color = "#00FF7F"
   erro_senha_usuario.innerHTML = ""
+  label_senha.innerHTML = "Senha"
 }
    
   }

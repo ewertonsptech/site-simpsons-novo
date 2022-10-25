@@ -523,3 +523,22 @@ right: 695px;
 top: 480px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+#pass {
+  width: 150px;
+  padding-right: 20px;
+}
+
+.olho {
+  cursor: pointer;
+  left: 795px;
+  top: 445px;
+  position: absolute;
+  width: 45px;
+}
+.olho2{
+  cursor: pointer;
+  left: 795px;
+  top: 416px;
+  position: absolute;
+  width: 45px;
+}

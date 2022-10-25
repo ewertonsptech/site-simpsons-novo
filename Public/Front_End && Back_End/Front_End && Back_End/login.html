@@ -46,11 +46,12 @@
 
                 <div class="form_group">
                   <label for="email" class="sub_title">Email</label>
-                  <input type="text" class="form_style" id="password" placeholder="Informe seu email">
+                  <input type="text" class="form_style" id="email_usuario placeholder="Informe seu email">
                    <span class="span_erro"></span>
                 </div>
 
                 <div class="form_group">
+                  <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho" class="olho2">
                   <label for="password" class="sub_title">Senha</label>
                   <input type="password" class="form_style" id="password" placeholder="Crie uma senha">
                   <span class="span_erro"></span>
@@ -103,15 +104,14 @@
 </body>
 </html>
 <script>
-    $("#search-icon").click(function() {
-  $(".nav").toggleClass("search");
-  $(".nav").toggleClass("no-search");
-  $(".search-input").toggleClass("search-active");
+  
+  document.getElementById('olho').addEventListener('mousedown', function() {
+ document.getElementById('password').type = 'text';
 });
 
-$('.menu-toggle').click(function(){
-   $(".nav").toggleClass("mobile-nav");
-   $(this).toggleClass("is-active");
+document.getElementById('olho').addEventListener('mouseup', function() {
+document.getElementById('password').type = 'password';
 });
+
 
 </script>
