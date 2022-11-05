@@ -54,6 +54,7 @@ h2 {
   align-items: center;
   height: 50px;
   overflow: hidden;
+  position: inherit;
 }
 
 .navbar img {

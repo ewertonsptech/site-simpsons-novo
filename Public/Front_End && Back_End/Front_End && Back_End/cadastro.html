@@ -126,17 +126,6 @@
 </body>
 </html>
 <script>
-  
-    document.getElementById('olho').addEventListener('mousedown', function() {
-   document.getElementById('senha_usuario').type = 'text';
-});
-
-document.getElementById('olho').addEventListener('mouseup', function() {
-  document.getElementById('senha_usuario').type = 'password';
-});
-
-
-  
 
 function cadastrar(){
 
@@ -179,10 +168,10 @@ function email(){
   
 function senha(){
   
-  let senha_usuario = senha_usuario.value
+  let senha = senha_usuario.value
   
 
-   if(senha_usuario.length < 8){
+   if(senha.length < 8){
     erro_senha_usuario.innerHTML = "Senha/email incorreto"
     document.getElementById("label_senha").style.color = "#FF0000"
     label_senha.innerHTML = "Senha menor que 8 caracteres"
@@ -200,5 +189,14 @@ else{
 
     document.getElementById("personagens_usuario").style.color = "#00FF7F"
   }
+    
+  document.getElementById('olho').addEventListener('mousedown', function() {
+   document.getElementById('senha_usuario').type = 'text';
+});
+
+document.getElementById('olho').addEventListener('mouseup', function() {
+  document.getElementById('senha_usuario').type = 'password';
+});
+
 
 </script>

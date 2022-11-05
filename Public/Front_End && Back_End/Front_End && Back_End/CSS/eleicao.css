@@ -420,3 +420,11 @@ animation:drift 10s linear infinite backwards;
   right: 40%;
 }
 
+
+.imgjogo{
+  top:12px;
+  right: 50px;
+  position: absolute;
+  width: 300px;
+  height: 200px;
+}

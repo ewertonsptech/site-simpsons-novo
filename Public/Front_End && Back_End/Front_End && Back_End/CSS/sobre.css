@@ -58,6 +58,7 @@
     align-items: center;
     height: 50px;
     overflow: hidden;
+    position: inherit;
   }
   
   .navbar img {
@@ -466,4 +467,29 @@
   color: #fff;
   top: 770px;
   right: 40%;
+}
+.minhahistoria{
+  position: absolute;
+  left: 90px;
+  border: 2px solid;
+  border-radius: 17px;
+  height: 550px;
+  width: 550px;
+  background-color: #fff;
+}
+.texto_historia{
+  color: #FFD900;
+}
+.ewerton_lima{
+  position: absolute;
+  left: 700px;
+  border-radius: 10%;
+  width: 270px;
+}
+.fundo{
+  position: absolute;
+  left: 90px;
+  border-radius: 2px;
+  height: 350px;
+  width: 350px;
 }
