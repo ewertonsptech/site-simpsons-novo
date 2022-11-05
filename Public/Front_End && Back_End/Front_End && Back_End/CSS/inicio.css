@@ -782,3 +782,8 @@ animation:drift 10s linear infinite backwards;
   top: 3300px;
   color: #000;
 }
+#nome{
+  position: absolute;
+  top: 5px;
+background-color: #000;
+}

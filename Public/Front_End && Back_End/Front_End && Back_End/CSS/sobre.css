@@ -485,6 +485,19 @@
   left: 700px;
   border-radius: 10%;
   width: 270px;
+  transform: translateY(0px);
+  animation: float 5s ease-in-out infinite;
+}
+@keyframes float{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-30px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }
 .fundo{
   position: absolute;
@@ -492,4 +505,16 @@
   border-radius: 2px;
   height: 350px;
   width: 350px;
+}
+.nome{
+  position: absolute;
+  top: 590px;
+color: #fff;
+right: 450px;
+}
+.profissao{
+  position: absolute;
+  top: 620px;
+color: #fff;
+right: 420px;
 }
