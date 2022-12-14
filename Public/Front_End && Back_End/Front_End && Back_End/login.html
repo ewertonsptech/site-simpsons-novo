@@ -28,7 +28,7 @@
       <li class="nav-item"><a href="login.html">Login</a></li>
       <li class="nav-item"><a href="sobre.html">Sobre</a></li>
       <li class="nav-item"><a href="curiosidade.html">Curiosidades</a></li>
-      <li class="nav-item"><a href="votacao.html" id="game">Game</a></li>
+      <li class="nav-item"><a href="jogo_simpsons.html" id="game">Game</a></li>
      
     </ul>
       
@@ -46,19 +46,19 @@
 
                 <div class="form_group">
                   <label for="email" class="sub_title">Email</label>
-                  <input type="text" class="form_style" id="email_usuario placeholder="Informe seu email">
+                  <input type="text" class="form_style" id="email_usuario" placeholder="Informe seu email">
                    <span class="span_erro"></span>
                 </div>
 
                 <div class="form_group">
                   <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho" class="olho2">
-                  <label for="password" class="sub_title">Senha</label>
+                  <label class="sub_title">Senha</label>
                   <input type="password" class="form_style" id="password" placeholder="Crie uma senha">
                   <span class="span_erro"></span>
                 </div>
                 <div>
                   <button class="btn" onclick="login()"><h3>Entrar</h3></button>
-                
+                <div id="resultado"></div>
                 </div>
               </div>
             </div>
@@ -101,6 +101,7 @@
           <div class="container">
           </div> 
         </div>
+     
 </body>
 </html>
 <script>
@@ -112,6 +113,14 @@
 document.getElementById('olho').addEventListener('mouseup', function() {
 document.getElementById('password').type = 'password';
 });
+
+function login(){
+ var senha = Number(password.value)
+
+ if(senha.length < 8){
+  resultado.innerHTML = `   <img src="Imagens/erro.png" class="erro">`
+ }
+}
 
 
 </script>

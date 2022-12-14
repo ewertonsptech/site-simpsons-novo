@@ -1,203 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="..//Front_End && Back_End/CSS/style.css">
-    <script src="https://kit.fontawesome.com/3f0399636b.js" crossorigin="anonymous"></script>
-    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
-<link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="..//Front_End && Back_End/CSS/style.css">
+  <script src="https://kit.fontawesome.com/3f0399636b.js" crossorigin="anonymous"></script>
+  <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
 </head>
+
 <body>
   <audio autoplay>
-    <source src="..//Front_End && Back_End/audio/ do filme Os Simpsons_ O Filme - The Simpsons Movie Theme(MP3_320K).mp3" type="audio/mp3">
+    <source
+      src="..//Front_End && Back_End/audio/ do filme Os Simpsons_ O Filme - The Simpsons Movie Theme(MP3_320K).mp3"
+      type="audio/mp3">
   </audio>
-   <div class="page-wrapper">
+  <div class="page-wrapper">
     <div class="nav-wrapper">
       <div class="grad-bar"></div>
       <nav class="navbar">
-      <img src="..//Front_End && Back_End/Imagens/sKqt5o.jpg" alt="" class="img">
-      <div class="menu-toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span  class="bar"></span>
-      <span  class="bar"></span>
-      </div>
-      <ul class="nav no-search">
-      <li class="nav-item"><a href="index.html">Inicio</a></li>
-      <li class="nav-item"><a href="cadastro.html">Cadastro</a></li>
-      <li class="nav-item"><a href="login.html">Login</a></li>
-      <li class="nav-item"><a href="sobre.html">Sobre</a></li>
-      <li class="nav-item"><a href="curiosidade.html">Curiosidades</a></li>
-      <li class="nav-item"><a href="votacao.html" id="game">Game</a></li>
-     
-    </ul>
-      
-    </nav>
-    </div>
-   </div>
-         <div class="banner">
-            <div class="container">
-              <div class="form-area">
-                <h4 class="title">Cadastrar</h4>
-                <span class = "circle-image">
-                  <img src = "..//Front_End && Back_End/Imagens/Homer_Simpson_2006.png" />
-                 </span>
-                <div class="form">
-                  <div class="form_group">
-                    <label for="name" class="sub_title" id="erro_nome_usuario">Nome</label>
-                    <input type="text" class="form_style" id="nome_usuario" placeholder="Informe seu nome">
-                   <span id="erro_nome" class="erro_nome"></span>
-                  </div>
-
-                  <div class="form_group">
-                    <label for="email" class="sub_title" id="email_usuario">Email</label>
-                    <input type="text" class="form_style" id="email" placeholder="Informe seu email">
-                     <span id="erro_email_usuario" class="erro_email"></span>
-                  </div>
-
-                  <div class="form_group">
-                    <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho" class="olho">
-                    <label for="password" class="sub_title" id="label_senha">Senha</label>
-                    <input type="password" class="form_style" id="senha_usuario" placeholder="Senha de no Mínimo 8 Caracteres">
-                   <span id="erro_senha_usuario" class="erro_senha"></span>
-                  </div>
-                  <div class="form_group">
-                    <label for="password" class="sub_title" id="personagens_usuario">Personagem Favorito</label>
-                 <select id="">
-                  <option value="">Bart Simpson</option>
-                  <option value="">Lisa Simpson</option>
-                  <option value="">Maggie Simpson</option>
-                  <option value="">Marge Simpson</option>
-                  <option value="">Homer Simpson</option>
-                 </select>
-
-                  </div>
-                  <div>
-                    <button class="btn" onclick="cadastrar()"><h3>Cadastrar</h3></button>
-                  
-                  </div>
-                 
-                </div>
-             
+        <img src="..//Front_End && Back_End/Imagens/sKqt5o.jpg" alt="" class="img">
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-            </div>
-            <div id="loader" class="hide">
-              <i class="fa-solid fa-spinner"></i>
-            </div>
-              
-  <div class="footer">
+        <ul class="nav no-search">
+          <li class="nav-item"><a href="index.html">Inicio</a></li>
+          <li class="nav-item"><a href="cadastro.html">Cadastro</a></li>
+          <li class="nav-item"><a href="login.html">Login</a></li>
+          <li class="nav-item"><a href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a href="curiosidade.html">Curiosidades</a></li>
+          <li class="nav-item"><a href="jogo_simpsons.html" id="game">Game</a></li>
+
+        </ul>
+
+      </nav>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="container">
+      <div class="form-area">
+        <h4 class="title">Cadastrar</h4>
+        <span class="circle-image">
+          <img src="..//Front_End && Back_End/Imagens/Homer_Simpson_2006.png" />
+        </span>
+        <div class="form">
+          <div class="form_group">
+            <label for="name" class="sub_title" id="erro_nome_usuario">Nome</label>
+            <input type="text" class="form_style" id="nome_usuario" placeholder="Informe seu nome">
+            <span id="erro_nome" class="erro_nome"></span>
+          </div>
+
+          <div class="form_group">
+            <label for="email" class="sub_title" id="email_usuario">Email</label>
+            <input type="text" class="form_style" id="email" placeholder="Informe seu email">
+            <span id="erro_email_usuario" class="erro_email"></span>
+          </div>
+
+          <div class="form_group">
+            <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho"
+              class="olho">
+            <label for="password" class="sub_title" id="label_senha">Senha</label>
+            <input type="password" class="form_style" id="senha_usuario" placeholder="Senha de no Mínimo 8 Caracteres">
+            <span id="erro_senha_usuario" class="erro_senha"></span>
+          </div>
+          <div class="form_group">
+            <label for="password" class="sub_title" id="personagens_usuario">Personagem Favorito</label>
+            <select id="">
+              <option value="">Bart Simpson</option>
+              <option value="">Lisa Simpson</option>
+              <option value="">Maggie Simpson</option>
+              <option value="">Marge Simpson</option>
+              <option value="">Homer Simpson</option>
+            </select>
+
+          </div>
+          <div>
+            <button class="btn" onclick="cadastrar()">
+              <h3>Cadastrar</h3>
+            </button>
+            <div id="resultado"></div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div id="loader" class="hide">
+      <i class="fa-solid fa-spinner"></i>
+    </div>
+
+    <div class="footer">
       <div class="redes_sociais">
         <h3 class="texto_rede_social">Redes Sociais</h3>
         <a href="">
-        <i class="fa-brands fa-whatsapp" id="whatsapp"></i>
-        <i class="fa-brands fa-fahrenheit"></i>
-      </a>
-        
+          <i class="fa-brands fa-whatsapp" id="whatsapp"></i>
+          <i class="fa-brands fa-fahrenheit"></i>
+        </a>
+
         <div class="github">
           <a href="">
-          <i class="fa-brands fa-github"></i>
-        </a>
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <div class="facebook">
+          <a href="">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+        <div class="instagram">
+          <a href="https://www.instagram.com/ewerton.lima.dev/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+        <div class="linkedin">
+          <a href="https://www.linkedin.com/in/ewerton-lima-45875016a">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="texto">
+          <h2 class="texto_footer"> Feito Com Amor Por Ewerton Lima 2023 </h2>
+        </div>
       </div>
-      <div class="facebook">
-        <a href="">
-        <i class="fa-brands fa-facebook"></i>
-      </a>
-      </div>
-      <div class="instagram">
-        <a href="https://www.instagram.com/ewerton.lima.dev/">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      </div>
-      <div class="linkedin">
-        <a href="https://www.linkedin.com/in/ewerton-lima-45875016a">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      </div>
-      <div class="texto">
-        <h2 class="texto_footer"> Feito Com Amor Por Ewerton Lima 2023 </h2> 
-      </div>
-    </div>
-    <div class="container">
+      <div class="container">
 
-    </div> 
-   
+      </div>
+
+
 </body>
+
 </html>
 <script>
 
-function cadastrar(){
+  function cadastrar() {
 
-  let validacao_nome = nome_usuario.value
-  
+    let validacao_nome = nome_usuario.value;
+    let senha = senha_usuario.value;
+    var email = document.getElementById('email');
+    var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-  if(validacao_nome.length < 3){
-    erro_nome.innerHTML = "Nome muito curto tente novamente"
-    document.getElementById("erro_nome_usuario").style.color = "#FF0000";
-    erro_nome_usuario.innerHTML = "Nome incorreto"
-  }
-  else{
-    document.getElementById("erro_nome_usuario").style.color = "#00FF7F";
-    erro_nome.innerHTML = ""
-    erro_nome_usuario.innerHTML = "Nome"
-  }
-  
-
-email()
-senha()
-personagens()
-
-}
-function email(){
-  var email = document.getElementById('email');
-        var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if (!filter.test(email.value)) {
-          erro_email_usuario.innerHTML="Por favor verifique o email e tente novamente"
-          document.getElementById("email_usuario").style.color = "#FF0000"
-          email_usuario.innerHTML = "Email inválido" 
-            return false;
-        }
-        else{
-          document.getElementById("email_usuario").style.color = "#00FF7F"
-          erro_email_usuario.innerHTML= ""
-          email_usuario.innerHTML = "Email"
-        }
-
-}
-  
-function senha(){
-  
-  let senha = senha_usuario.value
-  
-
-   if(senha.length < 8){
-    erro_senha_usuario.innerHTML = "Senha/email incorreto"
-    document.getElementById("label_senha").style.color = "#FF0000"
-    label_senha.innerHTML = "Senha menor que 8 caracteres"
-   }
- 
-    else{
-  document.getElementById("label_senha").style.color = "#00FF7F"
-  erro_senha_usuario.innerHTML = ""
-  label_senha.innerHTML = "Senha"
-}
-
-  }
-  function personagens(){
-
-    const personagens = personagens_usuario.value
 
     document.getElementById("personagens_usuario").style.color = "#00FF7F"
-  }
-    
-  document.getElementById('olho').addEventListener('mousedown', function() {
-   document.getElementById('senha_usuario').type = 'text';
-});
+    if (validacao_nome.length < 3) {
+      erro_nome.innerHTML = "Nome muito curto tente novamente"
+      document.getElementById("erro_nome_usuario").style.color = "#FF0000";
+      erro_nome_usuario.innerHTML = `Nome incorreto`
+    }
+    else if (validacao_nome.length >= 3) {
+      document.getElementById("erro_nome_usuario").style.color = "#00FF7F";
+      erro_nome.innerHTML = ""
+      erro_nome_usuario.innerHTML = "Nome"
+    }
 
-document.getElementById('olho').addEventListener('mouseup', function() {
-  document.getElementById('senha_usuario').type = 'password';
-});
+    if (senha.length < 8) {
+      erro_senha_usuario.innerHTML = "Senha/email incorreto"
+      document.getElementById("label_senha").style.color = "#FF0000"
+      label_senha.innerHTML = "Senha menor que 8 caracteres"
+    }
+
+    else if (senha.length >= 8) {
+      document.getElementById("label_senha").style.color = "#00FF7F"
+      erro_senha_usuario.innerHTML = ""
+      label_senha.innerHTML = "Senha"
+    }
+    if (!regex.test(email.value)) {
+      erro_email_usuario.innerHTML = "Por favor verifique o email e tente novamente"
+      document.getElementById("email_usuario").style.color = "#FF0000"
+      email_usuario.innerHTML = "Email inválido"
+      return false;
+    }
+    else if(regex.test(email.value)){
+      document.getElementById("email_usuario").style.color = "#00FF7F"
+      erro_email_usuario.innerHTML = ""
+      email_usuario.innerHTML = "Email"
+     
+    }
+    if(validacao_nome.length >= 3 && senha.length >= 8 && regex.test(email.value)){
+    resultado.innerHTML = `<img src="video/check-sucesso.png" class="sucesso">`
+    alert("Cadastro realizado com sucesso... redicionando a pagina de login")
+    }
+
+  }
+
+
+
+  document.getElementById('olho').addEventListener('mousedown', function () {
+    document.getElementById('senha_usuario').type = 'text';
+  });
+
+  document.getElementById('olho').addEventListener('mouseup', function () {
+    document.getElementById('senha_usuario').type = 'password';
+  });
 
 
 </script>

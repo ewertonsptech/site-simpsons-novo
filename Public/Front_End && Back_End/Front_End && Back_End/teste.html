@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
+<script src="..//JavaScript/teste.js"></script>
+    
+</head>
+<body>
+  
+
+
+Nome:
+<input type="text" id="nome_usuario">
+
+Idade:
+<input type="number" id="idade_usuario">
+      
+<button onclick="calcular()">
+  Calcular
+</button>
+  <div id="resultado"></div>
+</body>
+</html>
+<script>
+  function calcular(){
+    var nome = nome_usuario.value
+    var idade = Number(idade_usuario.value)
+    var verificacao_idade = idade >= 18 ? 'Maior' : 'Menor'
+
+    resultado.innerHTML = `Olá , ${nome} Você tem ${idade} anos e é ${verificacao_idade} de idade `
+
+  }
+</script>

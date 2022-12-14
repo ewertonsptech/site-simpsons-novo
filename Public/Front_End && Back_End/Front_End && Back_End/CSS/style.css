@@ -173,6 +173,7 @@
     border-radius: 0; /* FOR SAFARI */
     outline: 0;
     padding: 5px;
+    text-transform: uppercase;
   }
   
   /* MOBILE MENU & ANIMATION */
@@ -338,6 +339,7 @@
   font-weight: 600;
   margin: 5px 0;
   color: #000;
+  
 }
 .form_group{
   display: flex;
@@ -354,7 +356,7 @@
   border-radius: 4px;
   font-size: 15px;
 }
-.form_style:focus, .btn:focus{
+.form_style:focus{
   transform: translateY(4px);
   box-shadow: 1px 2px 0px 0px #000;
 }
@@ -368,6 +370,9 @@
   font-weight: 800;
  
 }
+
+  
+
 .circle-image {
   width: 10 px;
   height: 68px;
@@ -542,4 +547,11 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   top: 416px;
   position: absolute;
   width: 45px;
+}
+.sucesso{
+  position: absolute;
+  top: 290px;
+  left: 610px;
+  width: 100px;
+  border-radius: 100%;
 }
