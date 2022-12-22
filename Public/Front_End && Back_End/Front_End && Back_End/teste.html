@@ -1,38 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
-    <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
-<script src="..//JavaScript/teste.js"></script>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html, body {
+  background-color: #e77d68;
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+main {
+  flex: 1 0 auto;
+  padding: 15px 0; }
+
+a:focus, a:hover, a:visited {
+  text-decoration: none; }
+
+img {
+  display: block; }
+
+.fa-lg {
+  font-size: 1.25em; }
+
+.fa-stack:hover {
+  transform: scale(1.125); }
+
+.fa-stack-1x {
+  color: #e77d68; }
+
+.fa-stack-2x {
+  color: #fade4b; }
+
+.card {
+  margin: 15px auto;
+  max-width: 420px; }
+
+.card-img-top img {
+  border-radius: .25rem .25rem 0 0; }
+
+.card-body {
+  font-family: "Open Sans", sans-serif;
+  font-size: .875rem; }
+
+.card-link {
+  color: #4c69af;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase; }
+  .card-link:hover {
+    color: #4c69af; }
+
+footer {
+  background-color: #cc6e5c;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  height: 42px;
+  width: 100%;
+  text-align: center; }
+  footer a {
+    color: #f2dbd6;
+    font-size: .875rem;
+    line-height: 42px;
+    position: relative;
+    top: 2px; }
+    footer a:focus, footer a:hover, footer a:visited {
+      color: #f2dbd6; }
+    footer a svg {
+      margin-right: .3125rem;
+      vertical-align: text-bottom !important; }
+
+  </style>
 </head>
 <body>
-  
-
-
-Nome:
-<input type="text" id="nome_usuario">
-
-Idade:
-<input type="number" id="idade_usuario">
-      
-<button onclick="calcular()">
-  Calcular
-</button>
-  <div id="resultado"></div>
+  <main id="main">
+    <div class="container">
+      <div class="row">
+        <div id="img-div" class="col-md-6 col-lg-4 d-flex align-items-center">
+          <div class="mx-auto my-4" style="max-width: 420px;">
+            <img id="image" class="img-fluid my-2" src="https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/tribute_page/img/duh.png" alt="The Simpsons">
+            <div id="img-caption" class="text-center my-2">
+              <a href="https://www.facebook.com/TheSimpsons" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x"></i>
+                </span>
+              </a>
+              <a href="https://www.instagram.com/thesimpsons" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <span class="fa-stack fa-lg mx-2">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-instagram fa-stack-1x"></i>
+                </span>
+              </a>
+              <a href="https://twitter.com/thesimpsons" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow border-0">
+            <div class="card-img-top">
+              <img class="img-fluid" src="https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/tribute_page/img/homer_simpson.jpg" alt="Homer Simpson">
+            </div>
+            <div class="card-body">
+              <h4 id="title" class="card-title">Homer Simpson</h4>
+              <p id="tribute-info" class="card-text">Husband; Father; worker drone, Sector 7G at the Springfield Nuclear Power Plant. Lazy, unambitious, loves television, bowling ...</p>
+              <a id="tribute-link" class="card-link" href="https://en.wikipedia.org/wiki/Homer_Simpson" target="_blank" rel="noopener noreferrer">read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow border-0">
+            <div class="card-img-top">
+              <img class="img-fluid" src="https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/tribute_page/img/marge_simpson.jpg" alt="Marge Simpson">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Marge Simpson</h4>
+              <p class="card-text">Guilt ridden, selfless, old fashioned mom -- the thread that holds the Simpson family together. Loving, good natured. Has the ...</p>
+              <a class="card-link" href="https://en.wikipedia.org/wiki/Marge_Simpson" target="_blank" rel="noopener noreferrer">read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow border-0">
+            <div class="card-img-top">
+              <img class="img-fluid" src="https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/tribute_page/img/bart_simpson.jpg" alt="Bart Simpson">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Bart Simpson</h4>
+              <p class="card-text">Bartholomew J. Simpson. 10-year-old who want to have it all and usually gets what he wants -- which is sometimes more than ...</p>
+              <a class="card-link" href="https://en.wikipedia.org/wiki/Bart_Simpson" target="_blank" rel="noopener noreferrer">read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow border-0">
+            <div class="card-img-top">
+              <img class="img-fluid" src="https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/tribute_page/img/lisa_simpson.jpg" alt="Lisa Simpson">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Lisa Simpson</h4>
+              <p class="card-text">Misunderstood, overlooked, middle child. Bart's 8-year-old sister is intelligent, sensitive, talented, and creative. Plays a ...</p>
+              <a class="card-link" href="https://en.wikipedia.org/wiki/Lisa_Simpson" target="_blank" rel="noopener noreferrer">read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow border-0">
+            <div class="card-img-top">
+              <img class="img-fluid" src="https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/tribute_page/img/maggie_simpson.jpg" alt="Maggie Simpson">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Maggie Simpson</h4>
+              <p class="card-text">O mais novo do clã Simpson. Ela engatinha caindo e chupando a chupeta. Compreende tudo. Ela era ...</p>
+              <a class="card-link" href="https://en.wikipedia.org/wiki/Maggie_Simpson" target="_blank" rel="noopener noreferrer">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <a href="https://github.com/b0mh0lt" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-alt fa-lg"></i> Michael Bomholt</a>
+    </div>
+  </footer>
 </body>
 </html>
-<script>
-  function calcular(){
-    var nome = nome_usuario.value
-    var idade = Number(idade_usuario.value)
-    var verificacao_idade = idade >= 18 ? 'Maior' : 'Menor'
-
-    resultado.innerHTML = `Olá , ${nome} Você tem ${idade} anos e é ${verificacao_idade} de idade `
-
-  }
-</script>

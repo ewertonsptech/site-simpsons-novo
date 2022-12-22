@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -10,54 +10,49 @@
   <script src="https://kit.fontawesome.com/3f0399636b.js" crossorigin="anonymous"></script>
   <script src="sweetalert2/dist/sweetalert2.min.js"></script>
   <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
+ <link rel="shortcut icon" href="Imagens/The_Simpsons_yellow_logo.svg" type="image/x-icon">
 </head>
 
 <body>
-  <audio autoplay>
-    <source
-      src="..//Front_End && Back_End/audio/ do filme Os Simpsons_ O Filme - The Simpsons Movie Theme(MP3_320K).mp3"
-      type="audio/mp3">
-  </audio>
   <div class="page-wrapper">
     <div class="nav-wrapper">
       <div class="grad-bar"></div>
       <nav class="navbar">
-        <img src="..//Front_End && Back_End/Imagens/sKqt5o.jpg" alt="" class="img">
-        <div class="menu-toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="nav no-search">
-          <li class="nav-item"><a href="index.html">Inicio</a></li>
-          <li class="nav-item"><a href="cadastro.html">Cadastro</a></li>
-          <li class="nav-item"><a href="login.html">Login</a></li>
-          <li class="nav-item"><a href="sobre.html">Sobre</a></li>
-          <li class="nav-item"><a href="curiosidade.html">Curiosidades</a></li>
-          <li class="nav-item"><a href="jogo_simpsons.html" id="game">Game</a></li>
-
-        </ul>
-
-      </nav>
+      <img src="..//Front_End && Back_End/Imagens/logo_gif.gif" alt="" class="img">
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span  class="bar"></span>
+      <span  class="bar"></span>
+      </div>
+      <ul class="nav no-search">
+      <li class="nav-item"><a href="index.html">Inicio</a></li>
+      <li class="nav-item"><a href="cadastro.html">Cadastro</a></li>
+      <li class="nav-item"><a href="login.html">Login</a></li>
+      <li class="nav-item"><a href="sobre.html">Sobre</a></li>
+      <li class="nav-item"><a href="curiosidade.html">Curiosidades</a></li>
+      <li class="nav-item"><a href="votacao.html" id="game">Game</a></li>
+      
+    </ul>
+      
+    </nav>
     </div>
-  </div>
   <div class="banner">
     <div class="container">
       <div class="form-area">
-        <h4 class="title">Cadastrar</h4>
+        <h4 class="title" id="nome">Cadastrar</h4>
         <span class="circle-image">
           <img src="..//Front_End && Back_End/Imagens/Homer_Simpson_2006.png" />
         </span>
         <div class="form">
           <div class="form_group">
             <label for="name" class="sub_title" id="erro_nome_usuario">Nome</label>
-            <input type="text" class="form_style" id="nome_usuario" placeholder="Informe seu nome">
+            <input type="text" class="form_style" id="nome_usuario">
             <span id="erro_nome" class="erro_nome"></span>
           </div>
 
           <div class="form_group">
             <label for="email" class="sub_title" id="email_usuario">Email</label>
-            <input type="text" class="form_style" id="email" placeholder="Informe seu email">
+            <input type="text" class="form_style" id="email">
             <span id="erro_email_usuario" class="erro_email"></span>
           </div>
 
@@ -65,7 +60,7 @@
             <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho"
               class="olho">
             <label for="password" class="sub_title" id="label_senha">Senha</label>
-            <input type="password" class="form_style" id="senha_usuario" placeholder="Senha de no Mínimo 8 Caracteres">
+            <input type="password" class="form_style" id="senha_usuario" >
             <span id="erro_senha_usuario" class="erro_senha"></span>
           </div>
           <div class="form_group">
@@ -80,8 +75,8 @@
 
           </div>
           <div>
-            <button class="btn" onclick="cadastrar()">
-              <h3>Cadastrar</h3>
+            <button class="btn" onclick="cadastrar()" id="btn">
+              <h3 id="texto">Cadastrar</h3>
             </button>
             <div id="resultado"></div>
           </div>
@@ -128,6 +123,13 @@
       </div>
       <div class="container">
 
+        
+<!--Botão whatsapp-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://chat.whatsapp.com/I9kh2KEFcWW0WGTmdSdd3b" target="_blank">
+    <div class="btn-whatsapp pulsaDelay"><i class="fa fa-whatsapp"></i></div>
+</a>
+<!--Botão whatsapp-->
       </div>
 
 
@@ -142,6 +144,9 @@
     let senha = senha_usuario.value;
     var email = document.getElementById('email');
     var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    var botao_erro = window.document.getElementById('btn')
+    var texto = document.getElementById('texto')
+    var cadastro_texto = window.document.getElementById('nome')
 
 
     document.getElementById("personagens_usuario").style.color = "#00FF7F"
@@ -149,6 +154,10 @@
       erro_nome.innerHTML = "Nome muito curto tente novamente"
       document.getElementById("erro_nome_usuario").style.color = "#FF0000";
       erro_nome_usuario.innerHTML = `Nome incorreto`
+      botao_erro.style.background = '#FF0000'
+      botao_erro.style.border = '#FF0000'
+      texto.style.color = '#ffff'
+      cadastro_texto.style.color = '#FF0000'
     }
     else if (validacao_nome.length >= 3) {
       document.getElementById("erro_nome_usuario").style.color = "#00FF7F";
@@ -160,6 +169,10 @@
       erro_senha_usuario.innerHTML = "Senha/email incorreto"
       document.getElementById("label_senha").style.color = "#FF0000"
       label_senha.innerHTML = "Senha menor que 8 caracteres"
+      botao_erro.style.background = '#FF0000'
+      botao_erro.style.border = '#FF0000'
+      texto.style.color = '#ffff'
+      cadastro_texto.style.color = '#FF0000'
     }
 
     else if (senha.length >= 8) {
@@ -171,17 +184,27 @@
       erro_email_usuario.innerHTML = "Por favor verifique o email e tente novamente"
       document.getElementById("email_usuario").style.color = "#FF0000"
       email_usuario.innerHTML = "Email inválido"
+      botao_erro.style.background = '#FF0000'
+      botao_erro.style.border = '#FF0000'
+      texto.style.color = '#ffff'
+      cadastro_texto.style.color = '#FF0000'
       return false;
     }
-    else if(regex.test(email.value)){
+    else{
       document.getElementById("email_usuario").style.color = "#00FF7F"
       erro_email_usuario.innerHTML = ""
       email_usuario.innerHTML = "Email"
+      texto.style.color = '#ffff'
      
-    }
+    } }
+    function senha(){
     if(validacao_nome.length >= 3 && senha.length >= 8 && regex.test(email.value)){
-    resultado.innerHTML = `<img src="video/check-sucesso.png" class="sucesso">`
-    alert("Cadastro realizado com sucesso... redicionando a pagina de login")
+    resultado.innerHTML = `<img src="video/check-sucesso.png" class="sucesso">`;
+    alert("Cadastro realizado com sucesso... redicionando a pagina de login");
+    botao_erro.style.background = '#00FF00';
+    botao_erro.style.border = '#00FF00';
+    texto.style.color = '#ffff';
+    cadastro_texto.style.color = '#00FF00'
     }
 
   }
@@ -196,5 +219,5 @@
     document.getElementById('senha_usuario').type = 'password';
   });
 
-
+ 
 </script>

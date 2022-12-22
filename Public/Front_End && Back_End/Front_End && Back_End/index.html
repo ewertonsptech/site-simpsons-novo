@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -10,6 +10,7 @@
   <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="img_Dashboard/simpsons_fim_de_semestre.jpg">
   <script src="https://kit.fontawesome.com/3f0399636b.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="Imagens/The_Simpsons_yellow_logo.svg" type="image/x-icon">
 
 </head>
 
@@ -18,12 +19,11 @@
     <div class="nav-wrapper">
       <div class="grad-bar"></div>
       <nav class="navbar">
-        <img src="..//Front_End && Back_End/Imagens/sKqt5o.jpg" alt="" class="img">
+        <img src="..//Front_End && Back_End/Imagens/logo_gif.gif" alt="" class="img">
         <div class="menu-toggle" id="mobile-menu">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
-          
         </div>
         <ul class="nav no-search">
           <li class="nav-item"><a href="index.html">Inicio</a></li>
@@ -32,194 +32,135 @@
           <li class="nav-item"><a href="sobre.html">Sobre</a></li>
           <li class="nav-item"><a href="curiosidade.html">Curiosidades</a></li>
           <li class="nav-item"><a href="jogo_simpsons.html" id="game">Game</a></li>
-         
+
         </ul>
 
       </nav>
     </div>
-  </div>
 
-  <div class="banner">
-    <div class="container">
-      <h1 class="texto_simpsons">
-        <div id="text" class="text">
+    <div class="banner">
+      <div class="container">
+        <h1 class="texto_simpsons">
+          <div id="text" class="text">
 
-        </div>
-      </h1>
+          </div>
+        </h1>
+      </div>
     </div>
-  </div>
 
 
 
-  <div class="degrade">
-<img src="Imagens/logo_simpsons.png" alt="" class="logo_sipsons">
-    </center>
-    <img src="..//Front_End && Back_End/Imagens/ClownFace_avat0.webp" id="krusty">
-    <img src="..//Front_End && Back_End/Imagens/8eae76600d6090da366afb1bd3b68fa6.png" alt="" id="simpsons">
-    <div class="desenho">
-      <section class="vr">
-        <section class="antena right"></section>
-        <section class="antena left"></section>
-        <section class="tape"></section>
-      </section>
-      <video class="video">
+    <div class="degrade">
+      <img src="video/logo.png" alt="" class="logo_sipsons">
+      <img src="video/bart.png" alt="" class="bart">
+      <img src="video/SowballSimpsons.webp" alt="" class="gato" onclick="pausar()">
+      </center>
+
+      <img src="video/The_Simpsons_TV.png" alt="" class="tv">
+      <video class="video" onclick="clicar()">
+
         <source src="video/Simpsons • Abertura •(480P)(1).mp4" type="video/mp4" />
       </video>
-      <section>
-        <section class="decoration">
-          <div onclick="play()" class="ligar">
-            <span class="left ajust">||</span>
+      <div class="cla">
+        <img src="video/logo_branco.png" alt="">
+        <img id="image" class="homem_final" src="video/homer_simpson.jpg">
+        <div class="card-body">
+          <h4 id="title" class="card-title">Homer Simpson</h4>
+          <p id="tribute-info" class="card-text">Esposo; Pai; drone trabalhador, Setor 7G na Usina Nuclear de
+            Springfield.<br> Preguiçoso, sem ambição, adora televisão, boliche...</p>
+          <a id="tribute-link" class="card-link" href="https://en.wikipedia.org/wiki/Homer_Simpson" target="_blank"
+            rel="noopener noreferrer">CONSULTE MAIS INFORMAÇÃO</a>
+        </div>
+        <div class="marge">
+          <img src="video/marge_simpson.jpg" alt="" class="marge_final">
+          <div class="card-marge">
+            <h4 class="card-title">Marge Simpson</h4>
+            <p class="card-text">Mãe antiquada, altruísta e culpada - o fio que mantém a família Simpson unida.<br>
+              Amoroso, de boa índole. Tem o ...</p>
+            <a class="card-link" href="https://en.wikipedia.org/wiki/Marge_Simpson" target="_blank"
+              rel="noopener noreferrer">CONSULTE MAIS INFORMAÇÃO</a>
           </div>
-        </section>
-        <section class="decoration">
-          <div onclick="stop()" class="ligar">
-            <span class="right">||</span>
+          <div class="bart">
+            <img src="video/bart_simpson.jpg" class="bart_final">
+            <div class="card-bart">
+              <h4 class="card-title">Bart Simpson</h4>
+              <p class="card-text">Bartolomeu J. Simpson. Garoto de 10 anos que quer ter tudo e geralmente consegue o
+                que quer - o que às vezes é mais do que...</p>
+              <a class="card-link" href="https://en.wikipedia.org/wiki/Bart_Simpson" target="_blank"
+                rel="noopener noreferrer">CONSULTE MAIS INFORMAÇÃO</a>
+            </div>
+            <div class="lisa">
+              <img src="video/lisa_simpson.jpg" alt="" class="lisa_final">
+              <div class="card-lisa">
+                <h4 class="card-title">Lisa Simpson</h4>
+                <p class="card-text">Incompreendido, esquecido, filho do meio. A irmã de 8 anos de Bart é
+                  inteligente<br>, sensível, talentosa e criativa. Toca um...</p>
+                <a class="card-link" href="https://en.wikipedia.org/wiki/Lisa_Simpson" target="_blank"
+                  rel="noopener noreferrer">CONSULTE MAIS INFORMAÇÃO</a>
+              </div>
+              <div class="maggy">
+                <img src="video/maggie_simpson.jpg" class="maggy">
+                <div class="card-maggy">
+                  <h4 class="card-title">Maggie Simpson</h4>
+                  <p class="card-title">O mais novo do clã Simpson. Ela engatinha caindo e chupando a chupeta.
+                    Compreende tudo. Ela era ...</p>
+                  <p class="card-text">
+                    <a class="card-link" href="https://en.wikipedia.org/wiki/Maggie_Simpson" target="_blank"
+                      rel="noopener noreferrer">CONSULTE MAIS INFORMAÇÃO</a>
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
-        <section class="audio"></section>
-    </div>
-  </div>
-  <div class="conteudo">
-    <!-- First cloud -->
-    <svg version="1.1" class="svg-cloud01" viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet">
-      <g>
-        <path
-          d="M642.02-364.11c-0.772,0-1.519,0.114-2.229,0.313c-0.17-6.744-5.679-12.162-12.464-12.162   c-4.368,0-8.201,2.251-10.428,5.65c-1.38-2.61-4.117-4.393-7.275-4.393c-2.621,0-4.95,1.229-6.456,3.139   c-2.865-6.496-9.357-11.031-16.913-11.031c-8.99,0-16.479,6.42-18.138,14.926c-0.937-0.248-1.911-0.393-2.925-0.393   c-6.312,0-11.427,5.116-11.427,11.427c0,0.907,0.117,1.787,0.317,2.634h95.921c0.146-0.609,0.229-1.243,0.229-1.896   C650.233-360.433,646.556-364.11,642.02-364.11z" />
-      </g>
-      <g>
-        <path
-          d="M90.02,48.188c-0.771,0-1.518,0.113-2.229,0.312c-0.17-6.744-5.678-12.162-12.463-12.162   c-4.369,0-8.201,2.251-10.428,5.65c-1.381-2.61-4.117-4.393-7.275-4.393c-2.621,0-4.951,1.229-6.457,3.139   c-2.865-6.496-9.357-11.031-16.913-11.031c-8.99,0-16.479,6.42-18.138,14.926c-0.937-0.248-1.911-0.393-2.925-0.393   c-6.312,0-11.427,5.116-11.427,11.427c0,0.907,0.117,1.786,0.317,2.634h95.92c0.146-0.609,0.23-1.243,0.23-1.896   C98.234,51.863,94.557,48.188,90.02,48.188z" />
-      </g>
-    </svg>
-    <!-- Second cloud -->
-    <svg version="1.1" class="svg-cloud02" viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet">
-      <g>
-        <path
-          d="M642.02-364.11c-0.772,0-1.519,0.114-2.229,0.313c-0.17-6.744-5.679-12.162-12.464-12.162   c-4.368,0-8.201,2.251-10.428,5.65c-1.38-2.61-4.117-4.393-7.275-4.393c-2.621,0-4.95,1.229-6.456,3.139   c-2.865-6.496-9.357-11.031-16.913-11.031c-8.99,0-16.479,6.42-18.138,14.926c-0.937-0.248-1.911-0.393-2.925-0.393   c-6.312,0-11.427,5.116-11.427,11.427c0,0.907,0.117,1.787,0.317,2.634h95.921c0.146-0.609,0.229-1.243,0.229-1.896   C650.233-360.433,646.556-364.11,642.02-364.11z" />
-      </g>
-      <g>
-        <path
-          d="M90.02,48.188c-0.771,0-1.518,0.113-2.229,0.312c-0.17-6.744-5.678-12.162-12.463-12.162   c-4.369,0-8.201,2.251-10.428,5.65c-1.381-2.61-4.117-4.393-7.275-4.393c-2.621,0-4.951,1.229-6.457,3.139   c-2.865-6.496-9.357-11.031-16.913-11.031c-8.99,0-16.479,6.42-18.138,14.926c-0.937-0.248-1.911-0.393-2.925-0.393   c-6.312,0-11.427,5.116-11.427,11.427c0,0.907,0.117,1.786,0.317,2.634h95.92c0.146-0.609,0.23-1.243,0.23-1.896   C98.234,51.863,94.557,48.188,90.02,48.188z" />
-      </g>
-    </svg>
-    <img src="..//Front_End && Back_End/Imagens/qX6cG6O.png" alt="" id="tagnome"></center>
-    <div class="simpsons">
-      <img src="..//Front_End && Back_End/Imagens/Springfield_(The_Simpsons).png" id="historia_springfiel">
-      <b><h3 id="springield">Springfield A Cidade Simpsorama</h3></b>
-      <div class="cidade">
-        Springfield é a cidade habitada pelos personagens da série Os Simpsons. Ela é localizada a leste de Shelbyville e sul de Capital City.
-
-<br>As evidências são suficientemente contraditórias para podermos dizer que ela não pode ser identificada em nenhum estado em<br> específico.
-
-Springfield vista do espaço
-
-Fundada em 1796 por Jebediah Springfield, Springfield parece ser uma pequena cidade.<br> Ela possui uma Usina Nuclear, uma igreja protestante, duas escolas primárias, a Universidade de <br>Springfield, alguns museus, um pequeno estádio de beisebol, um aeroporto, um porto, um cassino ,um bairro de periferia ,<br>um condominio fechado ,sua propria emisora e varios artistas morando na cidade. 
-Apesar de possuir um porto,<br> ela apresenta várias montanhas incluindo o 'Muderhorn'. Ela ainda apresenta um gueto, um distrito russo,<br> sua cidade italiana e grega, uma vizinhança inteira judia, a Taverna do Moe, vários restaurantes, e ainda possui a pista de boliche de Barney Gumble.
-
-A cidade mais próxima de Springfield é Shelbyville. Há uma forte rivalidade entre estas duas cidades, proveniente da rivalidade de seus fundadores, Jebediah Springfield e Shelbyville Manhattan. Manhattan queria fundar uma cidade onde os homens podiam casar com suas primas, mas Springfield rejeitou essa idéia. Então Shelbyville decidiu fundar uma cidade rival. A cidade de Springfield foi eleita (em Os Simpsons) a pior cidade do mundo. 
-      </div>
-      <img src="Imagens/fox-simpsons-disney-fusao.jpg" alt="" class="fox">
-      <h2 class="disney">A Compra da Disney</h2>
-      <div class="texto_diney">
-        O diretor de longa data e produtor de Os Simpsons, David Silverman, em uma recente entrevista ao<br> Cinemablend, revelou se a Disney fez ou não alterações na série de TV animada <br>de maior duração da TV.
-
-De acordo com David Silverman, a Disney tem sido ótima em ter<br> Os Simpsons sob seu guarda-chuva até agora. A série, que é a mais longa série em <br>horário nobre da história, entretém as pessoas há mais de 30 anos. Quando foi ao ar pela primeira vez em<br> 1989, era controverso, mas os tempos mudaram muito desde então. Silverman tinha isso a dizer sobre a <br>Disney fazer alterações no programa:
-
-    “São negócios como sempre. A Disney é extremamente boa em<br> ‘Aqui está uma propriedade em que estamos trabalhando e, se não estiver quebrada, não tentaremos<br> consertar’ ‘. Eles estão adotando a mesma abordagem que adotaram com a Marvel e todas as outras<br>franquias com as quais estão trabalhando. Tem sido ótimo. Nenhuma mudança. “
-
-    Confira também:<br> Rick and Morty | Novo trailer revela data de retorno da quarta temporada
-
-Ainda é meio estranho ver que<br> Homer, Marge, Bart, Lisa e Maggie são de propriedade do Walt Disney Studios. Quando a Disney acabou<br> comprando a Fox em 2019, muitos fãs da família amarela se perguntaram se haveria mudanças no futuro, principalmente porque a série tem um humor um pouco ácido.
-
-Os Simpsons podem ter sido controversos em 1989, mas estão muito longe de Uma Família da Pesada, Rick and Morty, ou muitos outros programas de animação exibidos no momento. Mesmo assim, os fãs estavam preocupados com o fato de o programa perder sua atitude ou identidade depois de se mudar para a Disney. Felizmente, eles não têm nada com que se preocupar. Silverman também falou sobre como ele e a equipe ainda podem trabalhar durante o estado atual do mundo:
-
-    “Estamos nos divertindo muito. Acabei de sair de uma reunião para um episódio que será incrível, e isso é o que é habitual – o máximo de negócios que você pode fazer nessas circunstâncias, mas nós ainda estamos indo! Ainda estamos trabalhando. “
-
-Enquanto David Silverman diz que eles ainda podem trabalhar nos Simpsons em casa, ele não disse se o programa já tem data de estreia para uma nova temporada. A maior parte da indústria do entretenimento está em espera no momento e não seria surpreendente ver a temporada 32 ter uma data de estreia adiada, algo que normalmente acontece entre setembro e outubro. No entanto, isso ainda não foi confirmado oficialmente por ninguém na Disney.
-      </div>
-      <div class="previsoes">
-        <h2 class="previsao">Previsões dos Simpsons</h2>
-        <h2 class="guerra_ucrania">Guerra Ucrânia</h2>
-        <img src="Imagens/guerra_ucrania.webp" alt="" class="guerra">
-        <div class="texto_guerra">
-          No início de 2022, iniciou um grande acontecimento geopolítico que consiste na invasão da Ucrânia pela Rússia. <br>Além dos holofotes à gravidade do ocorrido, as pessoas se lembraram imediatamente do episódio de 1998 dos Simpsons <br>que previu essa crise.
-
-O episódio<br> em questão apresentava a Rússia pronta para retornar a União Soviética a qualquer sinal de tensão, o que acarretou,<br> inclusive, a ressurreição de Lênin.
-
-O produtor da animação afirmou em seu Twitter que, embora muito triste, <br>não foi difícil prever algo nesse sentido.
-        </div>
-        <img src="Imagens/200reais.webp" alt="" class="nota_200">
-        <h2 class="texto_nota">Nota de 200 Reais</h2>
-        <div class="nota">
-          Em 2013, o programa lançou um episódio em que Homer, que foi juiz de alguns jogos da Copa do Mundo do Brasil, teria sido subornado.<br>
-
-Assim, na intenção de fazer o personagem tomar decisões a favor do seu time, alguns criminosos ofereceram a Homer uma maleta<br> cheia de notas de 200 reais.
-
-Certamente, você já sabe que o Brasil terá uma nota de 200 reais.
-        </div>
-        <img src="Imagens/coronavirus.webp" alt="" class="coronavirus">
-        <h2 id="subtitulo">Coronavirús</h2>
-        <div class="texto_coronavirus">
-          Surpreendentemente, em um episódio de 1993, os moradores de Springfield se desesperam por causa de uma<br> nova gripe asiática. A Gripe de Osaka era super forte e deixou todos desesperados atrás da cura.
-
-Ironicamente, em 2020,<br> vivemos uma das maiores pandemias globais das últimas décadas.
         </div>
       </div>
-    </div>
+      <footer>
+        <div class="redes_sociais">
+          <h3 class="texto_rede_social">Redes Sociais</h3>
+          <a href="">
+            <i class="fa-brands fa-whatsapp" id="whatsapp"></i>
+            <i class="fa-brands fa-fahrenheit"></i>
+          </a>
 
-  </div>
+          <div class="github">
+            <a href="">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <div class="facebook">
+            <a href="">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+          <div class="instagram">
+            <a href="https://www.instagram.com/ewerton.lima.dev/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/ewerton-lima-45875016a">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+          <div class="texto">
+            <h2 class="texto_footer"> Feito Com Amor Por Ewerton Lima 2023 </h2>
+          </div>
+        </div>
+        <div class="container">
 
-            
-  <div class="footer">
-    <div class="redes_sociais">
-      <h3 class="texto_rede_social">Redes Sociais</h3>
-      <a href="">
-      <i class="fa-brands fa-whatsapp" id="whatsapp"></i>
-      <i class="fa-brands fa-fahrenheit"></i>
-    </a>
-      
-      <div class="github">
-        <a href="">
-        <i class="fa-brands fa-github"></i>
-      </a>
+        </div>
     </div>
-    <div class="facebook">
-      <a href="">
-      <i class="fa-brands fa-facebook"></i>
-    </a>
-    </div>
-    <div class="instagram">
-      <a href="https://www.instagram.com/ewerton.lima.dev/">
-      <i class="fa-brands fa-instagram"></i>
-    </a>
-    </div>
-    <div class="linkedin">
-      <a href="https://www.linkedin.com/in/ewerton-lima-45875016a">
-      <i class="fa-brands fa-linkedin"></i>
-    </a>
-    </div>
-    <div class="texto">
-      <h2 class="texto_footer"> Feito Com Amor Por Ewerton Lima 2023 </h2> 
-    </div>
-  </div>
-  <div class="container">
-
-    </div>
-  </div>
+    </footer>
+<!--Botão whatsapp-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://chat.whatsapp.com/I9kh2KEFcWW0WGTmdSdd3b" target="_blank">
+    <div class="btn-whatsapp pulsaDelay"><i class="fa fa-whatsapp"></i></div>
+</a>
+<!--Botão whatsapp-->
 </body>
 
 </html>
 <script>
-  const video = document.getElementsByTagName("video")[0];
-  video.currentTime = 2;
 
-  function play() {
-    video.play();
-  }
-
-  function stop() {
-    video.pause();
-  }
   var el = document.querySelector("#text");
   var text = "A Persistência é o Caminho do Êxito."
   var interval = 200;
@@ -240,4 +181,15 @@ Ironicamente, em 2020,<br> vivemos uma das maiores pandemias globais das última
 
   }
   showtext(el, text, interval);
+  const video = document.getElementsByTagName("video")[0];
+  video.currentTime = 2;
+
+
+
+  function clicar() {
+    video.play();
+  }
+  function pausar() {
+    video.pause();
+  }
 </script>

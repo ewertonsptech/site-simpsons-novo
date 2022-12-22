@@ -236,7 +236,7 @@ h2 {
 .degrade{
   height: 650px;
   display: flex;
- background:linear-gradient(-45deg , #A020F0 , 	#4B0082);
+  background: linear-gradient(-30deg, #0e78db , #010e1b );
   align-items: center;
   justify-content: center;
   align-items: center;
@@ -251,32 +251,11 @@ h2 {
   align-items: center;
   text-decoration: none;
 }
-.vr {
-  width: 25vh;
-  min-width: 25vh;
-  max-width: 25vh;
-  height: 5vh;
-  position: absolute;
-  top:-7.1vh;
-  border-radius: 5px 5px 0 0;
-  background-color: #543489;
-  border: 2px solid #5F4495;
-  position:absolute;
-  box-shadow: 15px 0 #888888;
-}
-.tape {
-  border: 2px solid #888888;
-  min-width:  8vh;
-  height: 2.5vh;
-  position: absolute;
-  border-radius: 5px;
-  background-color: #5F4495;
-  left: 8vh;
-  top:1vh;
-  box-shadow: 4px 0 #888888;
-  
-}
+
+
 .antena {
+  position: absolute;
+  left: 400px;
   border: 2px solid #000;
   border-radius: 5px;
   height: 40vh;
@@ -299,6 +278,8 @@ h2 {
  transform: rotate(-45deg);
 }
 .desenho{
+  position: absolute;
+  left: 160px;
   display: flex;
   justify-content: space-around;
   min-width: 50vh;
@@ -313,12 +294,10 @@ h2 {
   position:relative;
 }
 video {
-  width: 35vh;
-  align-item: start;
-  margin: 0 auto;
-  border-radius: 15px;
-  box-shadow: -7px -px black;
-  
+  top: 815px;
+ width: 375px;
+ position: absolute;
+ left: 638px;
 }
 section.decoration {
   display: flex;
@@ -578,7 +557,7 @@ animation:drift 10s linear infinite backwards;
 .texto_footer{
   position: absolute;
   color: #fff;
-  top: 770px;
+  top: 270px;
   right: 40%;
 }
 .texto_simpsons{
@@ -599,75 +578,11 @@ animation:drift 10s linear infinite backwards;
 }
 .logo_sipsons{
   position: absolute;
-  top: 650px;
-  width: 200px;
+  top: 880px;
+  left: 20px;
+  width: 500px;
 }
-.previsao{
-  color: #FFFF;
-  position: absolute;
-  top: 2500px;
-  left: 500px;
-}
-.guerra{
-  position: absolute;
-  top: 2600px;
-  right: 50px;
-  border-radius: 5px;
-  width: 300px;
-  height: 200px;
-}
-.guerra_ucrania{
-  color: #ffff;
-  position: absolute;
-  top: 2590px;
-  left: 260px;
-}
-.texto_guerra{
-  color: #ffff;
-  position: absolute;
-  top: 2650px;
-  left: 10px;
-}
-.nota_200{
-  position: absolute;
-  top: 2900px;
-  right: 50px;
-  border-radius: 5px;
-  width: 300px;
-  height: 200px;
-}
-.texto_nota{
-  color: #ffff;
-  position: absolute;
-  top: 2850px;
-  left: 260px;
-}
-.nota{
-  color: #ffff;
-  position: absolute;
-  top: 2950px;
-  left: 10px;
-}
-.coronavirus{
-  position: absolute;
-  top: 3220px;
-  right: 50px;
-  border-radius: 5px;
-  width: 300px;
-  height: 200px;
-}
-#subtitulo{
-  color: #ffff;
-  position: absolute;
-  top: 3150px;
-  left: 260px;
-}
-.texto_coronavirus{
-  color: #ffff;
-  position: absolute;
-  top: 3230px;
-  left: 10px;
-}
+
 
 .redes_sociais{
 
@@ -766,7 +681,7 @@ animation:drift 10s linear infinite backwards;
 }
 
 
-.footer {
+footer {
   background: #FFD200;
   color: white;
 }
@@ -786,4 +701,134 @@ animation:drift 10s linear infinite backwards;
   position: absolute;
   top: 5px;
 background-color: #000;
+}
+
+.gato{
+  width: 250px;
+  position: absolute;
+  right: 20px;
+}
+.bart{
+  width: 280px;
+  position: absolute;
+  right: 400px;
+  top: 635px;
+}
+.tv{
+  width: 450px;
+  position: absolute;
+  top: 780px;
+  left: 600px;
+}
+.cla {
+  background:linear-gradient(-30deg,  #e77d68,  #c72a0a);
+ width: 1349px;
+ height: 2200px;
+ position: absolute;
+ top: 1285px;
+}
+.homem_final{
+  position: absolute;
+  top: 200px;
+  right: 180px;
+}
+.card-body{
+  position: absolute;
+  right: 130px;
+  top: 500px;
+}
+.marge_final{
+  position: absolute;
+  top: 600px;
+  left: 30px;
+}
+.card-marge{
+  position: absolute;
+  top: 900px;
+  left: 30px;
+}
+.bart_final{
+  position: absolute;
+  top: 200px;
+  left: 1px;
+}
+.card-bart{
+  position: absolute;
+ right: -280px;
+  top: 500px;
+ 
+  
+}
+.lisa_final{
+  position: absolute;
+  top: 480px;
+  left: -640px;
+}
+.card-lisa{
+  position: absolute;
+  top: 800px;
+  left: -650px;
+}
+.maggy{
+  position: absolute;
+  top: 400px;
+  right: -100px;
+}
+.card-maggy{
+position: absolute;
+top: 700px;
+left: -381px;  
+}
+.btn-whatsapp a {
+
+	color:#fff; 
+	text-decoration:none; 
+	display:block; 
+}
+
+.btn-whatsapp {
+    
+    position:fixed; 
+    right:10px; 
+    top: 580px;
+    bottom:30px; 
+    transform: translate(-50%, -50%);  
+    background-color:rgb(37, 211, 102); 
+    width:60px; height:60px; 
+    text-align:center; 
+    line-height:58px; 
+    font-size:1.8em; 
+    color:#ffffff; 
+    font-weight:100; 
+    border-radius:50%; 
+}
+
+.btn-whatsapp:before,
+.btn-whatsapp:after
+
+{
+
+	content: '';
+    display:block;
+    position: absolute;
+    border-radius:50%;
+    border:1px solid #25d366;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    top: -20px;
+    animation: animate 1.5s linear infinite;
+    opacity:0;
+    backface-visibility:hidden;    
+}
+
+.pulsaDelay:after { animation-delay: .5s; }
+
+@keyframes animate {
+
+
+   0%   { transform: scale(0.5); opacity:0; }
+   50%  { opacity:1; }
+   100% { transform: scale(1.2); opacity:0; }
+
 }
