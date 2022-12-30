@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,413 +10,446 @@
     <link rel="stylesheet" href="..//Front_End && Back_End/CSS/eleicao.css">
     <link rel="shortcut icon" href="Imagens/The_Simpsons_yellow_logo.svg" type="image/x-icon">
 </head>
-<body>
-      <div class="page-wrapper">
-        <div class="nav-wrapper">
-          <div class="grad-bar"></div>
-          <nav class="navbar">
-          <img src="..//Front_End && Back_End/Imagens/logo_gif.gif" alt="" class="img">
-          <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span  class="bar"></span>
-          <span  class="bar"></span>
-          </div>
-          <ul class="nav no-search">
-          <li class="nav-item"><a href="index.html">Inicio</a></li>
-          <li class="nav-item"><a href="cadastro.html">Cadastro</a></li>
-          <li class="nav-item"><a href="login.html">Login</a></li>
-          <li class="nav-item"><a href="sobre.html">Sobre</a></li>
-          <li class="nav-item"><a href="curiosidade.html">Curiosidades</a></li>
-          <li class="nav-item"><a href="votacao.html" id="game">Game</a></li>
-          
-        </ul>
-          
-        </nav>
-        </div>
-    <div class="desenho">
- <!-- ICONS CLOUDS-->
- <div class="container-cloud">
 
-    <!-- First cloud -->
-    <svg version="1.1" class="svg-cloud01" viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet">
-    <g>
-    <path d="M642.02-364.11c-0.772,0-1.519,0.114-2.229,0.313c-0.17-6.744-5.679-12.162-12.464-12.162   c-4.368,0-8.201,2.251-10.428,5.65c-1.38-2.61-4.117-4.393-7.275-4.393c-2.621,0-4.95,1.229-6.456,3.139   c-2.865-6.496-9.357-11.031-16.913-11.031c-8.99,0-16.479,6.42-18.138,14.926c-0.937-0.248-1.911-0.393-2.925-0.393   c-6.312,0-11.427,5.116-11.427,11.427c0,0.907,0.117,1.787,0.317,2.634h95.921c0.146-0.609,0.229-1.243,0.229-1.896   C650.233-360.433,646.556-364.11,642.02-364.11z"/>
-    </g>
-    <g>
-    <path d="M90.02,48.188c-0.771,0-1.518,0.113-2.229,0.312c-0.17-6.744-5.678-12.162-12.463-12.162   c-4.369,0-8.201,2.251-10.428,5.65c-1.381-2.61-4.117-4.393-7.275-4.393c-2.621,0-4.951,1.229-6.457,3.139   c-2.865-6.496-9.357-11.031-16.913-11.031c-8.99,0-16.479,6.42-18.138,14.926c-0.937-0.248-1.911-0.393-2.925-0.393   c-6.312,0-11.427,5.116-11.427,11.427c0,0.907,0.117,1.786,0.317,2.634h95.92c0.146-0.609,0.23-1.243,0.23-1.896   C98.234,51.863,94.557,48.188,90.02,48.188z"/>
-    </g>
-    </svg>
-    <!-- Second cloud -->
-    <svg version="1.1" class="svg-cloud02" viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet">
-    <g>
-    <path d="M642.02-364.11c-0.772,0-1.519,0.114-2.229,0.313c-0.17-6.744-5.679-12.162-12.464-12.162   c-4.368,0-8.201,2.251-10.428,5.65c-1.38-2.61-4.117-4.393-7.275-4.393c-2.621,0-4.95,1.229-6.456,3.139   c-2.865-6.496-9.357-11.031-16.913-11.031c-8.99,0-16.479,6.42-18.138,14.926c-0.937-0.248-1.911-0.393-2.925-0.393   c-6.312,0-11.427,5.116-11.427,11.427c0,0.907,0.117,1.787,0.317,2.634h95.921c0.146-0.609,0.229-1.243,0.229-1.896   C650.233-360.433,646.556-364.11,642.02-364.11z"/>
-    </g>
-    <g>
-    <path d="M90.02,48.188c-0.771,0-1.518,0.113-2.229,0.312c-0.17-6.744-5.678-12.162-12.463-12.162   c-4.369,0-8.201,2.251-10.428,5.65c-1.381-2.61-4.117-4.393-7.275-4.393c-2.621,0-4.951,1.229-6.457,3.139   c-2.865-6.496-9.357-11.031-16.913-11.031c-8.99,0-16.479,6.42-18.138,14.926c-0.937-0.248-1.911-0.393-2.925-0.393   c-6.312,0-11.427,5.116-11.427,11.427c0,0.907,0.117,1.786,0.317,2.634h95.92c0.146-0.609,0.23-1.243,0.23-1.896   C98.234,51.863,94.557,48.188,90.02,48.188z"/>
-    </g>
-    </svg>
-  
-  <img src="Imagens/jogo_simpsons.png" alt="" class="imgjogo">
-      <!--Simpsons Game -->
-      <h1 id="title">The Simpsons...</h1>
-      <h3>Adivinhe o  <span class="red">Primeiro </span>Nome</h3>
-      <!-- Card One -->
-      <div class="spacing">
-        <h1 id="name0">***</h1>
-        <img id="pic0" src="https://raw.githubusercontent.com/sbjacobs231/The-Simpsons-Guess-Who-Game/master/img/homerblur.jpg">
-        <input type="text" id="answer0">
-      </div>
-  
-      <!-- Card Two -->
-      <div class="spacing">
-        <h1 id="name1">***</h1>
-        <img id="pic1" src="https://raw.githubusercontent.com/sbjacobs231/The-Simpsons-Guess-Who-Game/master/img/margeblur.jpg">
-        <input type="text" id="answer1">
-      </div>
-  
-      <!-- Card Three -->
-      <div class="spacing">
-        <h1 id="name2">***</h1>
-        <img id="pic2" src="https://raw.githubusercontent.com/sbjacobs231/The-Simpsons-Guess-Who-Game/master/img/maggieblur.jpg">
-        <input type="text" id="answer2">
-      </div>
-  
-      <!-- Card Four -->
-      <div class="spacing">
-        <h1 id="name3">***</h1>
-        <img id="pic3" src="https://raw.githubusercontent.com/sbjacobs231/The-Simpsons-Guess-Who-Game/master/img/bartblur.jpg">
-        <input type="text" id="answer3">
-      </div>
-  
-      <!-- Card Five -->
-      <div class="spacing">
-        <h1 id="name4">***</h1>
-        <img id="pic4" src="https://raw.githubusercontent.com/sbjacobs231/The-Simpsons-Guess-Who-Game/master/img/lisablur.jpg">
-        <input type="text" id="answer4">
-      </div>
-  
-      <!-- Card Six -->
-      <div class="spacing">
-        <h1 id="name5">***</h1>
-        <img id="pic5" src="https://raw.githubusercontent.com/sbjacobs231/The-Simpsons-Guess-Who-Game/master/img/moeblur.jpg">
-        <input type="text" id="answer5">
-      </div>
-  
-      <div class="buttonwrap">
-        <button id="btn" type="button" onclick="verificar()">Verificar</button>
-      </div>
-    </div>
-</div>
-    
-<!--Botão whatsapp-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://chat.whatsapp.com/I9kh2KEFcWW0WGTmdSdd3b" target="_blank">
-    <div class="btn-whatsapp pulsaDelay"><i class="fa fa-whatsapp"></i></div>
-</a>
-<!--Botão whatsapp--> 
+<body>
+    <div class="page-wrapper">
+        <div class="nav-wrapper">
+            <div class="grad-bar"></div>
+            <nav class="navbar">
+                <img src="..//Front_End && Back_End/Imagens/logo_gif.gif" alt="" class="img">
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav no-search">
+                    <li class="nav-item"><a href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a href="cadastro.html">Cadastro</a></li>
+                    <li class="nav-item"><a href="login.html">Login</a></li>
+                    <li class="nav-item"><a href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a href="curiosidade.html">Curiosidades</a></li>
+                    <li class="nav-item"><a href="votacao.html" id="game">Game</a></li>
+
+                </ul>
+
+            </nav>
+        </div>
+        <div class="desenho">
+            <!-- ICONS CLOUDS-->
+            <div class="container-cloud">
+
+                <!-- First cloud -->
+                <svg version="1.1" class="svg-cloud01" viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet">
+                    <g>
+                        <path
+                            d="M642.02-364.11c-0.772,0-1.519,0.114-2.229,0.313c-0.17-6.744-5.679-12.162-12.464-12.162   c-4.368,0-8.201,2.251-10.428,5.65c-1.38-2.61-4.117-4.393-7.275-4.393c-2.621,0-4.95,1.229-6.456,3.139   c-2.865-6.496-9.357-11.031-16.913-11.031c-8.99,0-16.479,6.42-18.138,14.926c-0.937-0.248-1.911-0.393-2.925-0.393   c-6.312,0-11.427,5.116-11.427,11.427c0,0.907,0.117,1.787,0.317,2.634h95.921c0.146-0.609,0.229-1.243,0.229-1.896   C650.233-360.433,646.556-364.11,642.02-364.11z" />
+                    </g>
+                    <g>
+                        <path
+                            d="M90.02,48.188c-0.771,0-1.518,0.113-2.229,0.312c-0.17-6.744-5.678-12.162-12.463-12.162   c-4.369,0-8.201,2.251-10.428,5.65c-1.381-2.61-4.117-4.393-7.275-4.393c-2.621,0-4.951,1.229-6.457,3.139   c-2.865-6.496-9.357-11.031-16.913-11.031c-8.99,0-16.479,6.42-18.138,14.926c-0.937-0.248-1.911-0.393-2.925-0.393   c-6.312,0-11.427,5.116-11.427,11.427c0,0.907,0.117,1.786,0.317,2.634h95.92c0.146-0.609,0.23-1.243,0.23-1.896   C98.234,51.863,94.557,48.188,90.02,48.188z" />
+                    </g>
+                </svg>
+                <!-- Second cloud -->
+                <svg version="1.1" class="svg-cloud02" viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet">
+                    <g>
+                        <path
+                            d="M642.02-364.11c-0.772,0-1.519,0.114-2.229,0.313c-0.17-6.744-5.679-12.162-12.464-12.162   c-4.368,0-8.201,2.251-10.428,5.65c-1.38-2.61-4.117-4.393-7.275-4.393c-2.621,0-4.95,1.229-6.456,3.139   c-2.865-6.496-9.357-11.031-16.913-11.031c-8.99,0-16.479,6.42-18.138,14.926c-0.937-0.248-1.911-0.393-2.925-0.393   c-6.312,0-11.427,5.116-11.427,11.427c0,0.907,0.117,1.787,0.317,2.634h95.921c0.146-0.609,0.229-1.243,0.229-1.896   C650.233-360.433,646.556-364.11,642.02-364.11z" />
+                    </g>
+                    <g>
+                        <path
+                            d="M90.02,48.188c-0.771,0-1.518,0.113-2.229,0.312c-0.17-6.744-5.678-12.162-12.463-12.162   c-4.369,0-8.201,2.251-10.428,5.65c-1.381-2.61-4.117-4.393-7.275-4.393c-2.621,0-4.951,1.229-6.457,3.139   c-2.865-6.496-9.357-11.031-16.913-11.031c-8.99,0-16.479,6.42-18.138,14.926c-0.937-0.248-1.911-0.393-2.925-0.393   c-6.312,0-11.427,5.116-11.427,11.427c0,0.907,0.117,1.786,0.317,2.634h95.92c0.146-0.609,0.23-1.243,0.23-1.896   C98.234,51.863,94.557,48.188,90.02,48.188z" />
+                    </g>
+                </svg>
+
+                <img src="gif_jogo/lisa_dancando.gif" class="lisa" id="play">
+                <img src="gif_jogo/3.png" class="bart" id="mute">
+
+                <!--Simpsons Game -->
+                <h1 id="title">The Simpsons...</h1>
+                <h3>Adivinhe o <span class="red">Primeiro </span>Nome</h3>
+                <!-- Card One -->
+                <div class="spacing">
+                    <h1 id="name0">***</h1>
+                    <img id="pic0"
+                        src="https://raw.githubusercontent.com/sbjacobs231/The-Simpsons-Guess-Who-Game/master/img/homerblur.jpg">
+                    <input type="text" id="answer0">
+                </div>
+
+                <!-- Card Two -->
+                <div class="spacing">
+                    <h1 id="name1">***</h1>
+                    <img id="pic1"
+                        src="https://raw.githubusercontent.com/sbjacobs231/The-Simpsons-Guess-Who-Game/master/img/margeblur.jpg">
+                    <input type="text" id="answer1">
+                </div>
+
+                <!-- Card Three -->
+                <div class="spacing">
+                    <h1 id="name2">***</h1>
+                    <img id="pic2"
+                        src="https://raw.githubusercontent.com/sbjacobs231/The-Simpsons-Guess-Who-Game/master/img/maggieblur.jpg">
+                    <input type="text" id="answer2">
+                </div>
+
+                <!-- Card Four -->
+                <div class="spacing">
+                    <h1 id="name3">***</h1>
+                    <img id="pic3"
+                        src="https://raw.githubusercontent.com/sbjacobs231/The-Simpsons-Guess-Who-Game/master/img/bartblur.jpg">
+                    <input type="text" id="answer3">
+                </div>
+
+                <!-- Card Five -->
+                <div class="spacing">
+                    <h1 id="name4">***</h1>
+                    <img id="pic4"
+                        src="https://raw.githubusercontent.com/sbjacobs231/The-Simpsons-Guess-Who-Game/master/img/lisablur.jpg">
+                    <input type="text" id="answer4">
+                </div>
+
+                <!-- Card Six -->
+                <div class="spacing">
+                    <h1 id="name5">***</h1>
+                    <img id="pic5"
+                        src="https://raw.githubusercontent.com/sbjacobs231/The-Simpsons-Guess-Who-Game/master/img/moeblur.jpg">
+                    <input type="text" id="answer5">
+                </div>
+
+                <div class="buttonwrap">
+                    <button id="btn" type="button" onclick="verificar()">Verificar</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Botão whatsapp-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://chat.whatsapp.com/I9kh2KEFcWW0WGTmdSdd3b" target="_blank">
+            <div class="btn-whatsapp pulsaDelay"><i class="fa fa-whatsapp"></i></div>
+        </a>
+        <!--Botão whatsapp-->
 </body>
+
 </html>
 <script>
+    var audio, playbtn;
 
-   
-var colour="random"; // "random" can be replaced with any valid colour ie: "red"...
-    var sparkles=100;// increase of decrease for number of sparkles falling
-    var x=ox=400;
-    var y=oy=300;
-    var swide=800;
-    var shigh=600;
-    var sleft=sdown=0;
-    var tiny=new Array();
-    var star=new Array();
-    var starv=new Array();
-    var starx=new Array();
-    var stary=new Array();
-    var tinyx=new Array();
-    var tinyy=new Array();
-    var tinyv=new Array();
-    
-    colours=new Array('#ff0000','#00ff00','#ffffff','#ff00ff','#ffa500','#ffff00','#00ff00','#ffffff','ff00ff' , '#000000' , ' 	#6A5ACD' , '#191970' , '#00BFFF' , '#4682B4'  , '#00FFFF' , '#7FFFD4' , '#00FF7F' , '#00FA9A' , '#98FB98' , '#3CB371' , '#006400')
-    
+    function initAudioPlayer() {
+        audio = new Audio();
+        audio.src = "video/Bruno Mars - It Will Rain (Official Music Video)(MP3_320K).mp3";
+        audio.loop = true;
+        audio.play();
+
+    }
+    window.addEventListener("load", initAudioPlayer);
+    playbtn = document.querySelector('#play');
+    mute = document.querySelector('#mute');
+
+    playbtn.addEventListener('click', (e) => {
+        audio.paused ? audio.play() : audio.pause();
+        e.target.textContent = audio.paused ? 'Play' : 'Pause';
+    })
+
+    mute.addEventListener('click', (e) => {
+        audio.muted = !audio.muted;
+        e.target.textContent = audio.muted ? 'Unmute' : 'Mute';
+    })
+
+    var colour = "random"; // "random" can be replaced with any valid colour ie: "red"...
+    var sparkles = 100;// increase of decrease for number of sparkles falling
+    var x = ox = 400;
+    var y = oy = 300;
+    var swide = 800;
+    var shigh = 600;
+    var sleft = sdown = 0;
+    var tiny = new Array();
+    var star = new Array();
+    var starv = new Array();
+    var starx = new Array();
+    var stary = new Array();
+    var tinyx = new Array();
+    var tinyy = new Array();
+    var tinyv = new Array();
+
+    colours = new Array('#ff0000', '#00ff00', '#ffffff', '#ff00ff', '#ffa500', '#ffff00', '#00ff00', '#ffffff', 'ff00ff', '#000000', ' 	#6A5ACD', '#191970', '#00BFFF', '#4682B4', '#00FFFF', '#7FFFD4', '#00FF7F', '#00FA9A', '#98FB98', '#3CB371', '#006400')
+
     n = 10;
     y = 0;
     x = 0;
-    n6=(document.getElementById&&!document.all);
-    ns=(document.layers);
-    ie=(document.all);
-    d=(ns||ie)?'document.':'document.getElementById("';
-    a=(ns||n6)?'':'all.';
-    n6r=(n6)?'")':'';
-    s=(ns)?'':'.style';
-    
-    if (ns){
+    n6 = (document.getElementById && !document.all);
+    ns = (document.layers);
+    ie = (document.all);
+    d = (ns || ie) ? 'document.' : 'document.getElementById("';
+    a = (ns || n6) ? '' : 'all.';
+    n6r = (n6) ? '")' : '';
+    s = (ns) ? '' : '.style';
+
+    if (ns) {
         for (i = 0; i < n; i++)
-            document.write('<layer name="dots'+i+'" top=0 left=0 width='+i/2+' height='+i/2+' bgcolor=#ff0000></layer>');
+            document.write('<layer name="dots' + i + '" top=0 left=0 width=' + i / 2 + ' height=' + i / 2 + ' bgcolor=#ff0000></layer>');
     }
-    
+
     if (ie)
         document.write('<div id="con" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
-    
-    if (ie||n6){
+
+    if (ie || n6) {
         for (i = 0; i < n; i++)
-            document.write('<div id="dots'+i+'" style="position:absolute;top:0px;left:0px;width:'+i/2+'px;height:'+i/2+'px;background:#ff0000;font-size:'+i/2+'"></div>');
+            document.write('<div id="dots' + i + '" style="position:absolute;top:0px;left:0px;width:' + i / 2 + 'px;height:' + i / 2 + 'px;background:#ff0000;font-size:' + i / 2 + '"></div>');
     }
-    
+
     if (ie)
         document.write('</div></div>');
-    (ns||n6)?window.captureEvents(Event.MOUSEMOVE):0;
-    
-    function Mouse(evnt){
-    
-        y = (ns||n6)?evnt.pageY+4 - window.pageYOffset:event.y+4;
-        x = (ns||n6)?evnt.pageX+1:event.x+1;
+    (ns || n6) ? window.captureEvents(Event.MOUSEMOVE) : 0;
+
+    function Mouse(evnt) {
+
+        y = (ns || n6) ? evnt.pageY + 4 - window.pageYOffset : event.y + 4;
+        x = (ns || n6) ? evnt.pageX + 1 : event.x + 1;
     }
-    
-    (ns)?window.onMouseMove=Mouse:document.onmousemove=Mouse;
-    
-    function animate(){
-    
-        o=(ns||n6)?window.pageYOffset:0;
-    
-        if (ie)con.style.top=document.body.scrollTop + 'px';
-    
-        for (i = 0; i < n; i++){
-    
-            var temp1 = eval(d+a+"dots"+i+n6r+s);
-    
-            randcolours = colours[Math.floor(Math.random()*colours.length)];
-    
-            (ns)?temp1.bgColor = randcolours:temp1.background = randcolours; 
-    
-            if (i < n-1){
-    
-                var temp2 = eval(d+a+"dots"+(i+1)+n6r+s);
+
+    (ns) ? window.onMouseMove = Mouse : document.onmousemove = Mouse;
+
+    function animate() {
+
+        o = (ns || n6) ? window.pageYOffset : 0;
+
+        if (ie) con.style.top = document.body.scrollTop + 'px';
+
+        for (i = 0; i < n; i++) {
+
+            var temp1 = eval(d + a + "dots" + i + n6r + s);
+
+            randcolours = colours[Math.floor(Math.random() * colours.length)];
+
+            (ns) ? temp1.bgColor = randcolours : temp1.background = randcolours;
+
+            if (i < n - 1) {
+
+                var temp2 = eval(d + a + "dots" + (i + 1) + n6r + s);
                 temp1.top = parseInt(temp2.top) + 'px';
                 temp1.left = parseInt(temp2.left) + 'px';
-    
-            } 
-            else{
-    
-                temp1.top = y+o + 'px';
+
+            }
+            else {
+
+                temp1.top = y + o + 'px';
                 temp1.left = x + 'px';
             }
         }
-    
-         // setTimeout("animate()",10);
+
+        // setTimeout("animate()",10);
     }
-    
+
     animate();
-    
-    window.onload=function() { if (document.getElementById) {
-        var i, rats, rlef, rdow;
-        for (var i=0; i<sparkles; i++) {
-            var rats=createDiv(3, 3);
-            rats.style.visibility="hidden";
-            rats.style.zIndex="999";
-            document.body.appendChild(tiny[i]=rats);
-            starv[i]=0;
-            tinyv[i]=0;
-            var rats=createDiv(5, 5);
-            rats.style.backgroundColor="transparent";
-            rats.style.visibility="hidden";
-            rats.style.zIndex="999";
-            var rlef=createDiv(1, 5);
-            var rdow=createDiv(5, 1);
-            rats.appendChild(rlef);
-            rats.appendChild(rdow);
-            rlef.style.top="2px";
-            rlef.style.left="0px";
-            rdow.style.top="0px";
-            rdow.style.left="2px";
-            document.body.appendChild(star[i]=rats);
+
+    window.onload = function () {
+        if (document.getElementById) {
+            var i, rats, rlef, rdow;
+            for (var i = 0; i < sparkles; i++) {
+                var rats = createDiv(3, 3);
+                rats.style.visibility = "hidden";
+                rats.style.zIndex = "999";
+                document.body.appendChild(tiny[i] = rats);
+                starv[i] = 0;
+                tinyv[i] = 0;
+                var rats = createDiv(5, 5);
+                rats.style.backgroundColor = "transparent";
+                rats.style.visibility = "hidden";
+                rats.style.zIndex = "999";
+                var rlef = createDiv(1, 5);
+                var rdow = createDiv(5, 1);
+                rats.appendChild(rlef);
+                rats.appendChild(rdow);
+                rlef.style.top = "2px";
+                rlef.style.left = "0px";
+                rdow.style.top = "0px";
+                rdow.style.left = "2px";
+                document.body.appendChild(star[i] = rats);
+            }
+            set_width();
+            sparkle();
         }
-        set_width();
-        sparkle();
-    }}
-    
+    }
+
     function sparkle() {
         var c;
-        if (Math.abs(x-ox)>1 || Math.abs(y-oy)>1) {
-            ox=x;
-            oy=y;
-            for (c=0; c<sparkles; c++) if (!starv[c]) {
-                star[c].style.left=(starx[c]=x)+"px";
-                star[c].style.top=(stary[c]=y+1)+"px";
-                star[c].style.clip="rect(0px, 5px, 5px, 0px)";
-                star[c].childNodes[0].style.backgroundColor=star[c].childNodes[1].style.backgroundColor=(colour=="random")?newColour():colour;
-                star[c].style.visibility="visible";
-                starv[c]=50;
+        if (Math.abs(x - ox) > 1 || Math.abs(y - oy) > 1) {
+            ox = x;
+            oy = y;
+            for (c = 0; c < sparkles; c++) if (!starv[c]) {
+                star[c].style.left = (starx[c] = x) + "px";
+                star[c].style.top = (stary[c] = y + 1) + "px";
+                star[c].style.clip = "rect(0px, 5px, 5px, 0px)";
+                star[c].childNodes[0].style.backgroundColor = star[c].childNodes[1].style.backgroundColor = (colour == "random") ? newColour() : colour;
+                star[c].style.visibility = "visible";
+                starv[c] = 50;
                 break;
             }
         }
-        for (c=0; c<sparkles; c++) {
+        for (c = 0; c < sparkles; c++) {
             if (starv[c]) update_star(c);
             if (tinyv[c]) update_tiny(c);
         }
         setTimeout("sparkle()", 40);
     }
-    
+
     function update_star(i) {
-        if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
+        if (--starv[i] == 25) star[i].style.clip = "rect(1px, 4px, 4px, 1px)";
         if (starv[i]) {
-            stary[i]+=1+Math.random()*3;
-            starx[i]+=(i%5-2)/5;
-            if (stary[i]<shigh+sdown) {
-                star[i].style.top=stary[i]+"px";
-                star[i].style.left=starx[i]+"px";
+            stary[i] += 1 + Math.random() * 3;
+            starx[i] += (i % 5 - 2) / 5;
+            if (stary[i] < shigh + sdown) {
+                star[i].style.top = stary[i] + "px";
+                star[i].style.left = starx[i] + "px";
             }
             else {
-                star[i].style.visibility="hidden";
-                starv[i]=0;
+                star[i].style.visibility = "hidden";
+                starv[i] = 0;
                 return;
             }
         }
         else {
-            tinyv[i]=50;
-            tiny[i].style.top=(tinyy[i]=stary[i])+"px";
-            tiny[i].style.left=(tinyx[i]=starx[i])+"px";
-            tiny[i].style.width="2px";
-            tiny[i].style.height="2px";
-            tiny[i].style.backgroundColor=star[i].childNodes[0].style.backgroundColor;
-            star[i].style.visibility="hidden";
-            tiny[i].style.visibility="visible"
+            tinyv[i] = 50;
+            tiny[i].style.top = (tinyy[i] = stary[i]) + "px";
+            tiny[i].style.left = (tinyx[i] = starx[i]) + "px";
+            tiny[i].style.width = "2px";
+            tiny[i].style.height = "2px";
+            tiny[i].style.backgroundColor = star[i].childNodes[0].style.backgroundColor;
+            star[i].style.visibility = "hidden";
+            tiny[i].style.visibility = "visible"
         }
     }
-    
+
     function update_tiny(i) {
-        if (--tinyv[i]==25) {
-            tiny[i].style.width="1px";
-            tiny[i].style.height="1px";
+        if (--tinyv[i] == 25) {
+            tiny[i].style.width = "1px";
+            tiny[i].style.height = "1px";
         }
         if (tinyv[i]) {
-            tinyy[i]+=1+Math.random()*3;
-            tinyx[i]+=(i%5-2)/5;
-            if (tinyy[i]<shigh+sdown) {
-                tiny[i].style.top=tinyy[i]+"px";
-                tiny[i].style.left=tinyx[i]+"px";
+            tinyy[i] += 1 + Math.random() * 3;
+            tinyx[i] += (i % 5 - 2) / 5;
+            if (tinyy[i] < shigh + sdown) {
+                tiny[i].style.top = tinyy[i] + "px";
+                tiny[i].style.left = tinyx[i] + "px";
             }
             else {
-                tiny[i].style.visibility="hidden";
-                tinyv[i]=0;
+                tiny[i].style.visibility = "hidden";
+                tinyv[i] = 0;
                 return;
             }
         }
-        else tiny[i].style.visibility="hidden";
+        else tiny[i].style.visibility = "hidden";
     }
-    
-    document.onmousemove=mouse;
+
+    document.onmousemove = mouse;
     function mouse(e) {
         if (e) {
-            y=e.pageY;
-            x=e.pageX;
+            y = e.pageY;
+            x = e.pageX;
         }
         else {
             set_scroll();
-            y=event.y+sdown;
-            x=event.x+sleft;
+            y = event.y + sdown;
+            x = event.x + sleft;
         }
     }
-    
-    window.onscroll=set_scroll;
+
+    window.onscroll = set_scroll;
     function set_scroll() {
-        if (typeof(self.pageYOffset)=='number') {
-            sdown=self.pageYOffset;
-            sleft=self.pageXOffset;
+        if (typeof (self.pageYOffset) == 'number') {
+            sdown = self.pageYOffset;
+            sleft = self.pageXOffset;
         }
         else if (document.body && (document.body.scrollTop || document.body.scrollLeft)) {
-            sdown=document.body.scrollTop;
-            sleft=document.body.scrollLeft;
+            sdown = document.body.scrollTop;
+            sleft = document.body.scrollLeft;
         }
         else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
-            sleft=document.documentElement.scrollLeft;
-            sdown=document.documentElement.scrollTop;
+            sleft = document.documentElement.scrollLeft;
+            sdown = document.documentElement.scrollTop;
         }
         else {
-            sdown=0;
-            sleft=0;
+            sdown = 0;
+            sleft = 0;
         }
     }
-    
-    window.onresize=set_width;
+
+    window.onresize = set_width;
     function set_width() {
-        var sw_min=999999;
-        var sh_min=999999;
+        var sw_min = 999999;
+        var sh_min = 999999;
         if (document.documentElement && document.documentElement.clientWidth) {
-            if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
-            if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
+            if (document.documentElement.clientWidth > 0) sw_min = document.documentElement.clientWidth;
+            if (document.documentElement.clientHeight > 0) sh_min = document.documentElement.clientHeight;
         }
-        if (typeof(self.innerWidth)=='number' && self.innerWidth) {
-            if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
-            if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
+        if (typeof (self.innerWidth) == 'number' && self.innerWidth) {
+            if (self.innerWidth > 0 && self.innerWidth < sw_min) sw_min = self.innerWidth;
+            if (self.innerHeight > 0 && self.innerHeight < sh_min) sh_min = self.innerHeight;
         }
         if (document.body.clientWidth) {
-            if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
-            if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+            if (document.body.clientWidth > 0 && document.body.clientWidth < sw_min) sw_min = document.body.clientWidth;
+            if (document.body.clientHeight > 0 && document.body.clientHeight < sh_min) sh_min = document.body.clientHeight;
         }
-        if (sw_min==999999 || sh_min==999999) {
-            sw_min=800;
-            sh_min=600;
+        if (sw_min == 999999 || sh_min == 999999) {
+            sw_min = 800;
+            sh_min = 600;
         }
-        swide=sw_min;
-        shigh=sh_min;
+        swide = sw_min;
+        shigh = sh_min;
     }
-    
+
     function createDiv(height, width) {
-        var div=document.createElement("div");
-        div.style.position="absolute";
-        div.style.height=height+"px";
-        div.style.width=width+"px";
-        div.style.overflow="hidden";
+        var div = document.createElement("div");
+        div.style.position = "absolute";
+        div.style.height = height + "px";
+        div.style.width = width + "px";
+        div.style.overflow = "hidden";
         return (div);
     }
-    
+
     function newColour() {
-        var c=new Array();
-        c[0]=255;
-        c[1]=Math.floor(Math.random()*256);
-        c[2]=Math.floor(Math.random()*(256-c[1]/2));
-        c.sort(function(){return (0.5 - Math.random());});
-        return ("rgb("+c[0]+", "+c[1]+", "+c[2]+")");
+        var c = new Array();
+        c[0] = 255;
+        c[1] = Math.floor(Math.random() * 256);
+        c[2] = Math.floor(Math.random() * (256 - c[1] / 2));
+        c.sort(function () { return (0.5 - Math.random()); });
+        return ("rgb(" + c[0] + ", " + c[1] + ", " + c[2] + ")");
     }
     // ]]>
     var personagem = ["homer", "marge", "maggie", "bart", "lisa", "moe"];
-    function verificar(){
-      for(i=0; i < personagem.length; i++) {
-        var collect = document.getElementById("answer" + i).value
-        if (collect.toLowerCase() == personagem[i]) {
-          var collect = document.getElementById("answer" + i);
-          collect.style.color = "#00FF00";
-          questaocorreta();
+    function verificar() {
+        for (i = 0; i < personagem.length; i++) {
+            var collect = document.getElementById("answer" + i).value
+            if (collect.toLowerCase() == personagem[i]) {
+                var collect = document.getElementById("answer" + i);
+                collect.style.color = "#00FF00";
+                questaocorreta();
+            }
+            if (i == personagem) {
+           alert("Olá")
+            }
+            else {
+                var collect = document.getElementById("answer" + i);
+                collect.style.color = "#FF0000";
+            }
         }
-        if(i >= personagem){
-          
-        }
-         else {
-          var collect = document.getElementById("answer" + i);
-          collect.style.color = "#FF0000";
-        }
-      }
     }
-    
+
     //When the answer is correct
     function questaocorreta() {
-      var name = document.getElementById("name" + i);
-      name.innerHTML = personagem[i];
-    
-      var pic = document.getElementById("pic" + i);
-      pic.src = "https://raw.githubusercontent.com/sbjacobs231/The-Simpsons-Guess-Who-Game/master/img/" + personagem[i] + ".jpg";
-    } 
-    
+        var name = document.getElementById("name" + i);
+        name.innerHTML = personagem[i];
+
+        var pic = document.getElementById("pic" + i);
+        pic.src = "https://raw.githubusercontent.com/sbjacobs231/The-Simpsons-Guess-Who-Game/master/img/" + personagem[i] + ".jpg";
+    }
+
     //return key function
     for (i = 0; i < personagem.length; i++) {
-      $("#answer" + i).keyup(function(event){
-          if(event.keyCode == 13){
-              $("#btn").click();
-          }
-      });
+        $("#answer" + i).keyup(function (event) {
+            if (event.keyCode == 13) {
+                $("#btn").click();
+            }
+        });
     }
-    
-    </script>
 
-
- 
-    
+</script>
